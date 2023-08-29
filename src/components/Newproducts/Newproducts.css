@@ -1,0 +1,23 @@
+.sliderdiv{
+    width: 250px;
+    height: 400px;
+    background-color: red;
+    margin-top: 50px;
+}
+.alice-carousel__prev-btn span{
+    display: none !important;
+}
+.alice-carousel__next-btn-wrapper span{
+    display: none !important;
+}
+.newprdtitle{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card{
+    width: 230px;
+}
+.card-footer  :hover{
+    cursor: pointer;
+}

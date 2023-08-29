@@ -1,0 +1,35 @@
+.slider-carousel{
+    margin-top: 100px;
+}
+
+.trapesium
+{
+    position: relative;
+    width: 200px;
+    z-index: 15;
+    background-color:#e4e7ed;
+    border-bottom: 398px solid transparent;
+    border-left: 864px solid #d31838;
+    height: 400px;
+}
+.imageslider
+{  
+    position: absolute;
+    z-index: 2;
+    right: 150px;
+    top: 100px;
+    width: 367px;
+}
+.slider-control-centerright button
+{
+   background-color: #d31838 !important;
+   border-radius: 50%;
+   width: 50px;
+   font-size: 10px;
+}
+.slider-control-centerleft button{
+    background-color: #d31838 !important;
+    border-radius: 50%;
+    width: 50px;
+    font-size: 10px;
+}

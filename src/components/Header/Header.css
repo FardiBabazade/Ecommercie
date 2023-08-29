@@ -1,0 +1,99 @@
+.navbar{
+    background-color: #1e1f29;
+    height: 170px;
+    border-bottom: 3px solid #d31737;
+}
+
+a{
+    color: #fff !important;
+    font-size: 12px;
+    text-decoration: none !important;
+}
+.navbar-brand{
+    font-size: 12px;
+}
+.dropdown-menu a{
+    color: #000 !important;
+}
+.navbar-brand:hover{
+    color: #d31737 !important;
+}
+.nav-link:hover{
+    color: #d31737 !important;
+}
+.flag{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.input-search{
+    width: 301px !important;
+    margin-left: -8px;
+    margin-top: 68px;
+}
+.search-button{
+    width: 100px;
+    height: 40px;
+    margin-top: 67px;
+   background-color: #d10024;
+   color: #fff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border:none;
+}
+
+.input-group-prepend button{
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fff;
+    margin-top: 68px;
+}
+.input-group-prepend  button:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+
+.icon-right{
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 19px;
+}
+.electro{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+.nav-item-two{
+    font-size: 15px;
+}
+.navbar-right{
+    margin-left: -29px;
+}
+#navbarDropdown{
+    margin-left: -40px;
+}
+.lang{
+    margin-left: 8px;
+}
+.nav-link{
+    margin-top: 3px;
+}
+
+/*  NAVBAR-TWO */
+
+.navbar-two{
+    height: 60px;
+    background-color:#fff;
+    border-bottom: 3px solid rgb(219, 214, 214);
+}
+.navbar-two a{
+    color: #7c858a  !important;
+    font-size: 16px;
+    
+}
