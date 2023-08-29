@@ -20,16 +20,6 @@
     top: 100px;
     width: 367px;
 }
-.slider-control-centerright button
-{
-   background-color: #d31838 !important;
-   border-radius: 50%;
-   width: 50px;
-   font-size: 10px;
-}
-.slider-control-centerleft button{
-    background-color: #d31838 !important;
-    border-radius: 50%;
-    width: 50px;
-    font-size: 10px;
+#thumbnail-div{
+    display: none !important;
 }

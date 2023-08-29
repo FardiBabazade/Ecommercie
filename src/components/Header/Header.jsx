@@ -46,7 +46,7 @@ function Header() {
                                 <div className="row">
                                     <div className="col-md-2">
                                         <center>
-                                            <li className="nav-item active">
+                                            <li className="nav-item ">
                                                 <a className="nav-link" href="#">Dəstək<span className="sr-only">(current)</span></a>
                                             </li>
                                             <li className="nav-item-two">
@@ -98,7 +98,7 @@ function Header() {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Smartfonlar</a>
+                        <a class="nav-item nav-link" href="#">Smartfonlar</a>
                         <a class="nav-item nav-link" href="#">Komputerlər</a>
                         <a class="nav-item nav-link" href="#">Planşsetlər</a>
                         <a class="nav-item nav-link" href="#">Monitorlar</a>
