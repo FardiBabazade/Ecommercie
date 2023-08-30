@@ -15,7 +15,6 @@ function Header() {
                         <div className="col-md-3">
                             <a className="navbar-brand-one" href="#">+994 70 777 77 77</a>
                             <a className="navbar-brand electro" href="#">Electro</a>
-
                         </div>
                         <div className="col-md-6">
                             <div className="row">
@@ -53,7 +52,6 @@ function Header() {
                                                 <a className="nav-link" href="#">
                                                     <center>
                                                         <img className="icon-right" src={accounticon} /> </center>Hesab</a>
-
                                             </li>
                                         </center>
                                     </div>
@@ -93,20 +91,21 @@ function Header() {
             </nav>
             <nav class="navbar-two navbar-expand-lg">
                 <div className="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Smartfonlar</a>
-                        <a class="nav-item nav-link" href="#">Komputerlər</a>
-                        <a class="nav-item nav-link" href="#">Planşsetlər</a>
-                        <a class="nav-item nav-link" href="#">Monitorlar</a>
-                        <a class="nav-item nav-link" href="#">Kameralar</a>
-                        <a class="nav-item nav-link" href="#">Aksesuarlar</a>
-                        <a class="nav-item nav-link" href="#">Ən çox satılanlar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#">Smartfonlar <span></span></a>
+                           
+                            <a class="nav-item nav-link" href="#">Komputerlər</a>
+                            <a class="nav-item nav-link" href="#">Planşsetlər</a>
+                            <a class="nav-item nav-link" href="#">Monitorlar</a>
+                            <a class="nav-item nav-link" href="#">Kameralar</a>
+                            <a class="nav-item nav-link" href="#">Aksesuarlar</a>
+                            <a class="nav-item nav-link" href="#">Ən çox satılanlar</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </nav>
         </section>

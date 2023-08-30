@@ -21,3 +21,28 @@
 .card-footer  :hover{
     cursor: pointer;
 }
+.card h5{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: .7;
+}
+.textunderline{
+    text-decoration:line-through;
+    font-size: 12px;
+}
+.cartfooterone{
+    font-weight: bold;
+    color: #d31737;
+}
+.fa-star{
+    font-size: 13px;
+    color: #d31737;
+    margin-top: 10px;
+}
+hr{
+    width: 59px;
+}
+.hrtwo{
+    margin-left: -35px;
+    width: 65px;
+}

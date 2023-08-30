@@ -1,8 +1,8 @@
-.slider-carousel{
+/* .slider-carousel{
     margin-top: 100px;
-}
+} */
 
-.trapesium
+/* .trapesium
 {
     position: relative;
     width: 200px;
@@ -11,6 +11,11 @@
     border-bottom: 398px solid transparent;
     border-left: 864px solid #d31838;
     height: 400px;
+} */
+.carousel-image{
+    width: 300px !important;
+    height: 250px !important;
+    margin-top: 100px !important;
 }
 .imageslider
 {  
@@ -22,4 +27,10 @@
 }
 #thumbnail-div{
     display: none !important;
+}
+ .next,.prev{
+    color: #d10024 !important;
+}
+.next,.prev:hover{
+    background-color: #e4e7ed !important;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Newproducts.css'
 import Carousel from 'react-grid-carousel'
 
 import hearticon from "../../assets/icons/heart-two.png";
@@ -11,15 +10,11 @@ import imagetwo from "../../assets/images/shop2.webp"
 import imagethree from "../../assets/images/shop3.webp"
 
 
-
-
-
-function Newproducts() {
-
+ function Topselling() {
     return (
         <div className='content container'>
 
-            <h3 className="text-left mb-5">YENI MƏHSULLAR</h3>
+            <h3 className="text-left mt-5 mb-5">ƏN ÇOX SATILANLAR</h3>
             <Carousel cols={4} rows={1} gap={10} loop>
                 <Carousel.Item>
                     <div className="card">
@@ -281,4 +276,5 @@ function Newproducts() {
     )
 }
 
-export default Newproducts;
+
+export default Topselling;

@@ -81,10 +81,10 @@ a{
 .lang{
     margin-left: 8px;
 }
+
 .nav-link{
     margin-top: 3px;
 }
-
 /*  NAVBAR-TWO */
 
 .navbar-two{
@@ -96,4 +96,10 @@ a{
     color: #7c858a  !important;
     font-size: 16px;
     
+}
+
+
+/* NAVBAR3 */
+#navbarNavAltMarkup .nav-link{
+    margin-top: 7px;
 }

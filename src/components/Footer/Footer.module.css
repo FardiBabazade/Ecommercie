@@ -1,0 +1,27 @@
+.footersize{
+    width: 100%;
+    height: 400px;
+    background-color: #15161d;
+    margin-top: 50PX;
+}
+.footertitle{
+    font-weight: 600;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 65px;
+    margin-bottom: 45px;
+    text-align: left;
+}
+.footerp{
+  color: #fff;
+  font-size: 13px;
+  text-align: justify;
+  color: #B9BABC;
+}
+.footerptitle{
+    color: #fff;
+    font-size: 13px;
+    text-align: justify;
+    width: 200px;
+    color: #B9BABC;
+}
