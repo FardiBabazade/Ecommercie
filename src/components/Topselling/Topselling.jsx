@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-grid-carousel'
+import "./Topselling.css";
 
 import hearticon from "../../assets/icons/heart-two.png";
 import infoicon from "../../assets/icons/info.png";
@@ -10,9 +11,9 @@ import imagetwo from "../../assets/images/shop2.webp"
 import imagethree from "../../assets/images/shop3.webp"
 
 
- function Topselling() {
+function Topselling() {
     return (
-        <div className='content container'>
+        <div className='content container topsellingsection'>
 
             <h3 className="text-left mt-5 mb-5">ƏN ÇOX SATILANLAR</h3>
             <Carousel cols={4} rows={1} gap={10} loop>
@@ -20,24 +21,26 @@ import imagethree from "../../assets/images/shop3.webp"
                     <div className="card">
                         <img className="card-img-top" src={imageone} alt="Card image cap" />
                         <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
+                            <h5 className="card-title text-center">CATEGORY</h5>
+                            <p className="card-text text-center"><b>PRODUCT NAME</b></p>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <center>
+                                        <span className="cartfooterone">$980.00</span>
+                                        <span className="textunderline ml-2">$980.00</span>
+                                    </center>
                                 </div>
                                 <div className="col-md-3">
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                 </div>
                                 <div className="col-md-3">
-                                <hr className="hrtwo" />
+                                    <hr className="hrtwo" />
                                 </div>
                             </div>
 
@@ -62,24 +65,70 @@ import imagethree from "../../assets/images/shop3.webp"
                     <div className="card">
                         <img className="card-img-top" src={imageone} alt="Card image cap" />
                         <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
+                            <h5 className="card-title text-center">CATEGORY</h5>
+                            <p className="card-text text-center"><b>PRODUCT NAME</b></p>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <center>
+                                        <span className="cartfooterone">$980.00</span>
+                                        <span className="textunderline ml-2">$980.00</span>
+                                    </center>
                                 </div>
                                 <div className="col-md-3">
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                 </div>
                                 <div className="col-md-3">
-                                <hr className="hrtwo" />
+                                    <hr className="hrtwo" />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="card-footer">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <img src={hearticon} alt="" />
+                                </div>
+                                <div className="col-md-4">
+                                    <img src={infoicon} alt="" />
+                                </div>
+                                <div className="col-md-4">
+                                    <img src={shopcarttwo} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </Carousel.Item>  
+                   <Carousel.Item>
+                    <div className="card">
+                        <img className="card-img-top" src={imageone} alt="Card image cap" />
+                        <div className="card-body">
+                            <h5 className="card-title text-center">CATEGORY</h5>
+                            <p className="card-text text-center"><b>PRODUCT NAME</b></p>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <center>
+                                        <span className="cartfooterone">$980.00</span>
+                                        <span className="textunderline ml-2">$980.00</span>
+                                    </center>
+                                </div>
+                                <div className="col-md-3">
+                                    <hr />
+                                </div>
+                                <div className="col-md-6">
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                </div>
+                                <div className="col-md-3">
+                                    <hr className="hrtwo" />
                                 </div>
                             </div>
 
@@ -104,24 +153,26 @@ import imagethree from "../../assets/images/shop3.webp"
                     <div className="card">
                         <img className="card-img-top" src={imageone} alt="Card image cap" />
                         <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
+                            <h5 className="card-title text-center">CATEGORY</h5>
+                            <p className="card-text text-center"><b>PRODUCT NAME</b></p>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <center>
+                                        <span className="cartfooterone">$980.00</span>
+                                        <span className="textunderline ml-2">$980.00</span>
+                                    </center>
                                 </div>
                                 <div className="col-md-3">
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                 </div>
                                 <div className="col-md-3">
-                                <hr className="hrtwo" />
+                                    <hr className="hrtwo" />
                                 </div>
                             </div>
 
@@ -146,24 +197,26 @@ import imagethree from "../../assets/images/shop3.webp"
                     <div className="card">
                         <img className="card-img-top" src={imageone} alt="Card image cap" />
                         <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
+                            <h5 className="card-title text-center">CATEGORY</h5>
+                            <p className="card-text text-center"><b>PRODUCT NAME</b></p>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <center>
+                                        <span className="cartfooterone">$980.00</span>
+                                        <span className="textunderline ml-2">$980.00</span>
+                                    </center>
                                 </div>
                                 <div className="col-md-3">
-                                    <hr/>
+                                    <hr />
                                 </div>
                                 <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                 </div>
                                 <div className="col-md-3">
-                                <hr className="hrtwo" />
+                                    <hr className="hrtwo" />
                                 </div>
                             </div>
 
@@ -184,93 +237,9 @@ import imagethree from "../../assets/images/shop3.webp"
                         </div>
                     </div>
                 </Carousel.Item>
-                <Carousel.Item>
-                    <div className="card">
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                </div>
-                                <div className="col-md-3">
-                                    <hr/>
-                                </div>
-                                <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                                </div>
-                                <div className="col-md-3">
-                                <hr className="hrtwo" />
-                                </div>
-                            </div>
+                
 
-                        </div>
-                        <div className="card-footer">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <img src={hearticon} alt="" />
-                                </div>
-                                <div className="col-md-4">
-                                    <img src={infoicon} alt="" />
-                                </div>
-                                <div className="col-md-4">
-                                    <img src={shopcarttwo} alt="" />
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </Carousel.Item>
-             <Carousel.Item>
-                    <div className="card">
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">CATEGORY</h5>
-                            <p className="card-text"><b>PRODUCT NAME</b></p>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <span className="cartfooterone">$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                </div>
-                                <div className="col-md-3">
-                                    <hr/>
-                                </div>
-                                <div className="col-md-6">
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                             <i className="fa fa-star"></i>
-                                </div>
-                                <div className="col-md-3">
-                                <hr className="hrtwo" />
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="card-footer">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <img src={hearticon} alt="" />
-                                </div>
-                                <div className="col-md-4">
-                                    <img src={infoicon} alt="" />
-                                </div>
-                                <div className="col-md-4">
-                                    <img src={shopcarttwo} alt="" />
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </Carousel.Item>
-              
-            
-          
             </Carousel>
         </div>
     )

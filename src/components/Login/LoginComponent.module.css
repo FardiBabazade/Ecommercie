@@ -1,0 +1,101 @@
+.loginpage{
+    width: 100%;
+    height: 540px;
+    background-color:#d10024 ;
+}
+.logindiv{
+
+    width: 360px;
+    height: 419px;
+    background-color: #fff;
+    margin-top: 55px;
+    border-radius: 8px;
+}
+.logintitle{
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.loginbtn{
+width: 150px;
+height: 40px;
+border-radius: 6px;
+border: none;
+background-color: #d10024;
+color: #fff;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+ 
+}
+/* .selectedlogin{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+} */
+/* .selectedsign{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+} */
+
+.signbtn{
+    width: 150px;
+height: 40px;
+border-radius: 6px;
+color: #d10024;
+background-color: #fff;
+border-width: thin;
+border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.signbtntext{
+    font-size: 17px;
+    font-weight: 500;
+}
+.inputsize{
+    width: 300px;
+    margin-top: 30px;
+}
+.inputsizetwo{
+    width: 300px;
+    margin-top: 10px;
+}
+.textforgot{
+    color: #d10024 !important;
+    display: block;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 31px;
+    margin-top: 3px;
+}
+
+.loginbutton{
+ width: 300px;
+height: 40px;
+border: none;
+background-color: #d10024;
+color: #fff;
+margin-top: 26px;
+border-radius: 6px;
+display: block;
+font-size: 17px;
+font-weight: 500;
+}
+.loginbtnforgotpassword{
+ font-size: 15px;
+ margin-top: 19px;
+    display: inline-block;
+ 
+}
+.loginnotemember{
+    font-size: 15px;
+    color: #d10024;
+    margin-top: 19px;
+    display: inline-block;
+}
