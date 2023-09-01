@@ -5,6 +5,7 @@ import azeflag from "../../assets/icons/azeflag.png";
 import heaerticon from "../../assets/icons/heart.png";
 import shopcart from "../../assets/icons/shop-cart.png";
 import accounticon from "../../assets/icons/account.png";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -14,7 +15,9 @@ function Header() {
                     <div className="row">
                         <div className="col-md-3">
                             <a className="navbar-brand-one" href="#">+994 70 777 77 77</a>
-                            <a className="navbar-brand electro" href="#">Electro</a>
+                            <Link to="/">
+                                <a className="navbar-brand electro">Ecommerce</a>
+                            </Link>
                         </div>
                         <div className="col-md-6">
                             <div className="row">
@@ -31,58 +34,59 @@ function Header() {
                                 </div>
                                 <div className="col-md-6">
                                     <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
-
                                 </div>
                                 <div className="col-md-3">
                                     <button className=" search-button" type="submit">Search</button>
                                 </div>
                             </div>
-
                         </div>
                         <div className="col-md-3">
                             <div>
-
                                 <div className="row">
                                     <div className="col-md-2">
                                         <center>
                                             <li className="nav-item ">
-                                                <a className="nav-link" href="#">Dəstək<span className="sr-only">(current)</span></a>
+                                                <a className="nav-link nav-link-help" href="#">Dəstək<span className="sr-only">(current)</span></a>
                                             </li>
                                             <li className="nav-item-two">
-                                                <a className="nav-link" href="#">
-                                                    <center>
-                                                        <img className="icon-right" src={accounticon} /> </center>Hesab</a>
+                                                <Link to="/login">
+                                                    <a className="nav-link">
+                                                        <center>
+                                                            <img className="icon-right" src={accounticon} />
+                                                        </center>Hesab
+                                                         </a>
+                                                </Link>
                                             </li>
                                         </center>
                                     </div>
-                                    <div className="col-md-5">
+                                    <div className="col-md-6">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Biz kimik?</a>
+                                            <a className="nav-link nav-link-fav" href="#">Biz kimik?</a>
                                         </li>
                                         <li className="nav-item-two">
-                                            <a className="nav-link" href="#"><img className="icon-right" src={heaerticon} />
+                                            <a className="nav-link nav-link-fav-bottom" href="#"><img className="icon-right favourite" src={heaerticon} />
                                                 <center>
                                                     Seçilmişlər
                                               </center>
                                             </a>
-
                                         </li>
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="nav-item dropdown lang">
-                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Dil
+                                        <center>
+                                            <li className="nav-item dropdown lang">
+                                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Dil
                                                  </a>
-                                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Aze</a>
-                                                <a className="dropdown-item" href="#"><img className="flag" src={engflag} />Eng</a>
-                                            </div>
-                                        </li>
-                                        <li className="nav-item-two  navbar-right ">
-                                            <a className="nav-link" href="#"><img className="icon-right" src={shopcart} />Səbət</a>
-                                        </li>
+                                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Aze</a>
+                                                    <a className="dropdown-item" href="#"><img className="flag" src={engflag} />Eng</a>
+                                                </div>
+                                            </li>
+                                            <li className="nav-item-two  navbar-right ">
+                                                <a className="nav-link" href="#"><img className="icon-right" src={shopcart} />Səbət</a>
+                                            </li>
+                                        </center>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -97,13 +101,12 @@ function Header() {
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link" href="#">Smartfonlar <span></span></a>
-                           
-                            <a class="nav-item nav-link" href="#">Komputerlər</a>
-                            <a class="nav-item nav-link" href="#">Planşsetlər</a>
-                            <a class="nav-item nav-link" href="#">Monitorlar</a>
-                            <a class="nav-item nav-link" href="#">Kameralar</a>
-                            <a class="nav-item nav-link" href="#">Aksesuarlar</a>
-                            <a class="nav-item nav-link" href="#">Ən çox satılanlar</a>
+                            <Link to="/products">  <a class="nav-item nav-link" >Komputerlər</a></Link>
+                            <Link to="/products"> <a class="nav-item nav-link" >Planşsetlər</a></Link>
+                            <Link to="/products">  <a class="nav-item nav-link" >Monitorlar</a></Link>
+                            <Link to="/products"> <a class="nav-item nav-link" >Kameralar</a></Link>
+                            <Link to="/products"> <a class="nav-item nav-link" >Aksesuarlar</a></Link>
+                            <Link to="/products"> <a class="nav-item nav-link" >Ən çox satılanlar</a></Link>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
 .loginpage{
     width: 100%;
-    height: 540px;
+    height: 600px;
     background-color:#d10024 ;
 }
 .logindiv{
 
     width: 360px;
-    height: 400px;
+    height: 479px;
     background-color: #fff;
     margin-top: 55px;
     border-radius: 8px;
@@ -22,13 +22,13 @@ width: 150px;
 height: 40px;
 border-radius: 6px;
 border: none;
-background-color: #d10024;
-color: #fff;
+background-color: #fff;
+color: #d10024;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
- 
+    border:1px solid #d10024;
 }
 
 
@@ -36,35 +36,46 @@ color: #fff;
     width: 150px;
     height: 40px;
     border-radius: 6px;
-    color: #d10024;
-    background-color: #fff;
-   border:1px solid #d10024;
+    color: #fff;
+    background-color: #d10024;
+    border:none;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
-    border-color: #d10024;
 }
 .signbtntext{
     font-size: 17px;
     font-weight: 500;
 }
-.inputsize{
-    width: 300px;
-    margin-top: 30px;
-}
-.inputsizetwo{
+.inputsizepassword{
     width: 300px;
     margin-top: 10px;
 }
-.textforgot{
+.inputsizerepassword{
+    width: 300px;
+    margin-top: 10px;
+}
+.inputsizeemail{
+    width: 300px;
+    margin-top: 10px;
+}
+.inputsizename{
+    width: 300px;
+    margin-top: 25px;
+}
+.inputsizesurname{
+    width: 300px;
+    margin-top: 10px;
+}
+/* .textforgot{
     color: #d10024 !important;
     display: block;
     font-size: 15px;
     text-align: justify;
     margin-left: 31px;
     margin-top: 3px;
-}
+} */
 
 .loginbutton{
  width: 300px;
@@ -78,11 +89,10 @@ display: block;
 font-size: 17px;
 font-weight: 500;
 }
-.loginbtnforgotpassword{
+/* .loginbtnforgotpassword{
  font-size: 15px;
  margin-top: 19px;
     display: inline-block;
-    margin-right: 8px;
  
 }
 .loginnotemember{
@@ -90,4 +100,4 @@ font-weight: 500;
     color: #d10024;
     margin-top: 19px;
     display: inline-block;
-}
+} */

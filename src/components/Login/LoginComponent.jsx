@@ -1,16 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from "react-router-dom";
 import styles from "./LoginComponent.module.css";
 
 function LoginComponent() {
-
-
-    const [buttonCheck, setButtonCheck] = useState(false)
-
-
-    const changeButton = () => {
-        setButtonCheck(!buttonCheck)
-    }
-
     return (
         <section className={styles.loginpage}>
             <div className="container">
@@ -22,31 +14,29 @@ function LoginComponent() {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <button
-                                            onClick={changeButton}
-                                            className={buttonCheck ?
-                                                styles.signbtn:
-                                               styles.loginbtn}>
-
+                                            className={styles.loginbtn}>
                                             <span className={styles.signbtntext}>Login</span>
                                         </button>
-                                        <button
-                                                onClick={changeButton}
-                                                className={buttonCheck ?
-                                                styles.loginbtn :
-                                                styles.signbtn}>
-                                            <span className={styles.signbtntext}>Signup</span>
-                                        </button>
+                                        <Link to="/registration">
+                                            <button
+                                                className={styles.signbtn}>
+                                                <span className={styles.signbtntext}>Signup</span>
+                                            </button>
+                                        </Link>
                                         <input type="text" placeholder="Email Address" className={`${styles.inputsize} form-control `} />
                                         <input type="text" placeholder="Password" className={`${styles.inputsizetwo} form-control `} />
-                                        <a className={styles.textforgot}>Forgot password?</a>
+                                        <Link to="/passwordrefresh">
+                                            <a className={styles.textforgot}>Forgot password?</a>
+                                        </Link>
+
+
                                         <button className={styles.loginbutton}>Login</button>
                                         <span className={styles.loginbtnforgotpassword}> Not a member?    </span>
-                                        <span className={styles.loginnotemember}>  Signup now</span>
+                                        <Link to="/registration">
+                                            <span className={styles.loginnotemember}>  Signup now</span>
+                                        </Link>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </center>
                     </div>

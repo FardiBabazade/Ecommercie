@@ -3,7 +3,6 @@
     height: 170px;
     border-bottom: 3px solid #d31737;
 }
-
 a{
     color: #fff !important;
     font-size: 12px;
@@ -20,13 +19,15 @@ a{
 }
 .nav-link:hover{
     color: #d31737 !important;
+    cursor: pointer;
 }
 .flag{
     width: 30px;
     margin-right: 10px;
 }
-
-
+.favourite{
+    margin-left: 17px !important;
+}
 .input-search{
     width: 301px !important;
     margin-left: -8px;
@@ -44,7 +45,6 @@ a{
     border-bottom-right-radius: 16px;
     border:none;
 }
-
 .input-group-prepend button{
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
@@ -57,8 +57,6 @@ a{
     background-color: #fff !important;
     color: #000 !important;
 }
-
-
 .icon-right{
     width: 20px;
     margin-left: 5px;
@@ -71,22 +69,30 @@ a{
 }
 .nav-item-two{
     font-size: 15px;
+    margin-left: 10px;
 }
 .navbar-right{
     margin-left: -29px;
 }
 #navbarDropdown{
-    margin-left: -40px;
+    margin-left: -33px;
 }
 .lang{
     margin-left: 8px;
 }
-
 .nav-link{
     margin-top: 3px;
 }
+.nav-link-fav{
+    margin-left: 26px;
+}
+.nav-link-fav-bottom{
+    margin-left: 16px;
+}
+.nav-link-help{
+    margin-left: 6px;
+}
 /*  NAVBAR-TWO */
-
 .navbar-two{
     height: 60px;
     background-color:#fff;
@@ -95,10 +101,7 @@ a{
 .navbar-two a{
     color: #7c858a  !important;
     font-size: 16px;
-    
 }
-
-
 /* NAVBAR3 */
 #navbarNavAltMarkup .nav-link{
     margin-top: 7px;
