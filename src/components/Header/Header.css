@@ -8,8 +8,16 @@ a{
     font-size: 12px;
     text-decoration: none !important;
 }
+.navbar-nav{
+    word-spacing: 4px;
+}
 .navbar-brand{
     font-size: 12px;
+}
+.dropdown-menu-lang{
+    min-width: 20px;
+    left: -76px;
+    background-color:  #e4e7ed
 }
 .dropdown-menu a{
     color: #000 !important;
@@ -22,11 +30,11 @@ a{
     cursor: pointer;
 }
 .flag{
-    width: 30px;
-    margin-right: 10px;
+    width: 20px;
+    margin-right: 4px;
 }
 .favourite{
-    margin-left: 17px !important;
+    margin-left: 49px !important;
 }
 .input-search{
     width: 301px !important;
@@ -37,8 +45,8 @@ a{
     width: 100px;
     height: 40px;
     margin-top: 67px;
-   background-color: #d10024;
-   color: #fff;
+    background-color: #d10024;
+    color: #fff;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 16px;
@@ -62,20 +70,21 @@ a{
     margin-left: 5px;
     margin-top: 19px;
 }
+.icon-right-basket{
+    width: 20px;
+    margin-left: 2px;
+    margin-top: 19px;
+}
 .electro{
     font-size: 45px;
     font-weight: 700;
     margin-top: 18px;
 }
-.nav-item-two{
-    font-size: 15px;
-    margin-left: 10px;
-}
 .navbar-right{
-    margin-left: -29px;
+    margin-left: -75px;
 }
 #navbarDropdown{
-    margin-left: -33px;
+    margin-left: -79px;
 }
 .lang{
     margin-left: 8px;
@@ -84,13 +93,13 @@ a{
     margin-top: 3px;
 }
 .nav-link-fav{
-    margin-left: 26px;
+    margin-left: -8px;
 }
 .nav-link-fav-bottom{
-    margin-left: 16px;
+    margin-left: -40px;
 }
 .nav-link-help{
-    margin-left: 6px;
+    margin-left: -4px;
 }
 /*  NAVBAR-TWO */
 .navbar-two{
@@ -105,4 +114,43 @@ a{
 /* NAVBAR3 */
 #navbarNavAltMarkup .nav-link{
     margin-top: 7px;
+}
+#navigationbar{
+   
+ 
+}
+#navbarcategorydiv{
+    width: 1105px;
+    height: 500px;
+    position: relative;
+    top:10px;
+    z-index: 10;
+    background-color: #1e1f29;
+    border-radius: 6px;
+    height: 0;
+    /* visibility: hidden; */
+    transition: height 1500ms ease;
+   
+}
+#navigationbar:hover  #navbarcategorydiv {
+  height: 543px;
+  visibility: visible;
+}
+#navigationbar:hover #navbarcategorydiv li {
+  display: block;
+  }
+#navbarcategorydiv li{
+    color: #fff;
+    display: none;
+}
+#navbarcategorydiv p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+.wrapper{
+    padding: 10px 25px;
 }

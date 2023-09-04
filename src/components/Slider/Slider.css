@@ -1,21 +1,19 @@
-/* .slider-carousel{
-    margin-top: 100px;
-} */
 
-/* .trapesium
-{
-    position: relative;
-    width: 200px;
-    z-index: 15;
-    background-color:#e4e7ed;
-    border-bottom: 398px solid transparent;
-    border-left: 864px solid #d31838;
-    height: 400px;
-} */
+
+.carousel-caption-bottom{
+    position: relative !important;
+    z-index: 1 !important;
+    margin-bottom: 0 !important;
+    font-size: 30px !important;
+    /* margin-top: 60px; */
+}
+#homecompback{
+    background-color: #fff;
+}
 .carousel-image{
-    width: 300px !important;
-    height: 250px !important;
-    margin-top: 100px !important;
+    width: 260px !important;
+    height: 240px !important;
+    margin-top: 80px !important;
 }
 .imageslider
 {  
@@ -25,8 +23,8 @@
     top: 100px;
     width: 367px;
 }
-#thumbnail-div{
-    display: none !important;
+#thumbnail-div{ 
+    display: none;
 }
  .next,.prev{
     color: #d10024 !important;
