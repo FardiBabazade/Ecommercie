@@ -128,29 +128,33 @@ a{
     background-color: #1e1f29;
     border-radius: 6px;
     height: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: height 1500ms ease;
    
 }
-#navigationbar:hover  #navbarcategorydiv {
+#navigationbar:hover  #navbarcategorydiv span{
   height: 543px;
-  visibility: visible;
+  visibility: hidden;
 }
-#navigationbar:hover #navbarcategorydiv li {
-  display: block;
-  }
-#navbarcategorydiv li{
+/* #navigationbar:hover #navbarcategorydiv li {
+  display: inline-block;
+  } */
+#navbarcategorydiv .threecategory{
     color: #fff;
-    display: none;
+    font-size: 16px;
+    /* display: inline-block; */
+    /* visibility: hidden ; */
 }
-#navbarcategorydiv p{
-    color: #fff;
-    font-size: 12px;
+#navbarcategorydiv span{
+    color: #d10024;
+    font-size: 20px;
     margin-top: 20px;
     margin-left: 15px;
     font-weight: bold;
-    display: inline-block;
+    /* display: inline; */
+    /* visibility: hidden; */
 }
+
 .wrapper{
     padding: 10px 25px;
 }

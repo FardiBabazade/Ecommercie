@@ -11,7 +11,7 @@ function Header() {
 
 
     const [categoryMenuTitleTwo, setCategoryMenuTitleTwo] = useState([])
-    const [categoryMenuTitleTwoElements, setCategoryMenuTitleTwoElements] = useState([])
+    // const [categoryMenuTitleTwoElements, setCategoryMenuTitleTwoElements] = useState([])
 
     // let categoryNavigationBar = [
     //     ["Smartfonlar", "Duymeli telefonlar", "Stasionar telefonlar", "Telefon aksesuarlari" ,"Qulaqliqlar", "Qulaqliq aksesuarlari"],
@@ -20,35 +20,73 @@ function Header() {
     //     ["Böyük texnika", "Yemək hazırlanması", "İçki hazırlanması"],
     //     ["Tozsoranlar", "Robot tozsoranlar", "Buxarlı tənzimləyicilər", "Tikiş maşınları", "Buxarlı generatorlar", "Iqlim texnikasi", "Yuyucu tozsoranlar", "Ütülər"],
     // ]
- 
+
+    // let categoryNavigationBar = [
+    //     {
+    //         "categoryTitle":["Smartfonlar","Duymeli telefonlar","Stasionar telefonlar","Telefon aksesuarlari","Qulaqliqlar","Qulaqliq aksesuarlari"],
+    //         "categoryElements":["Qoruyucususe","qoruyucu ortuk"]
+    //     },
+    //     {
+    //         "categoryTitle":["Smart saatlar", "Smart qolbaqlar", "Qol saatlari", "Saat aksesuarlari", "Usaq smart saatlari", "Smart avadanliqlari"],
+    //         "categoryElements":["ss2222","jhj2222","uiui222"]
+    //     },
+    //     {
+    //         "categoryTitle": ["Komputerler", "Notboklar", "Planşetlər", "Monitorlar", "Kompüterler hisseleri", "Periferik avadanliqlar"],
+    //         "categoryElements":["ss33333","gg3333",]
+    //     },
+    //     {
+    //         "categoryTitle":  ["Böyük texnika", "Yemək hazırlanması", "İçki hazırlanması"],
+    //         "categoryElements":["ss4444","jh4444","uiu444"]
+    //     },
+    //     {
+    //         "categoryTitle":   ["Tozsoranlar", "Robot tozsoranlar", "Buxarlı tənzimləyicilər", "Tikiş maşınları", "Buxarlı generatorlar", "Iqlim texnikasi", "Yuyucu tozsoranlar", "Ütülər"],
+    //         "categoryElements":["ss555","jh555","555"]
+    //     },
+    // ]
     let categoryNavigationBar = [
         {
-            "categoryTitle":["Smartfonlar","Duymeli telefonlar","Stasionar telefonlar","Telefon aksesuarlari","Qulaqliqlar","Qulaqliq aksesuarlari"],
-            "categoryElements":["Qoruyucususe","qoruyucu ortuk"]
+            "Smartfonlar": {},
+            "Duymeli telefonlar": {},
+            "Stasionar telefonlar": {},
+            "Telefon aksesuarlari": {
+                "Qoruyucu suse": "",
+                "Simsiz enerji toplama cihazı": "",
+                "Qoruyucu örtük": "",
+                "USB naqillər": "",
+                "Poverbanklar": "",
+                "Adapterlər": "",
+                "SD kartlar": "",
+                "Selfie çubuqları": "",
+                "Gamepadlər": "",
+                "Magsafelər": "",
+            },
+            "Qulaqliqlar": {
+                "Bluetooth simsiz qulaqcıqlar": "",
+                "TWS simsiz qulaqcıqlar": "",
+                "Simli qulaqlıqlar": "",
+            },
+            "Qulaqliq Aksesuarları": {},
         },
         {
-            "categoryTitle":["Smart saatlar", "Smart qolbaqlar", "Qol saatlari", "Saat aksesuarlari", "Usaq smart saatlari", "Smart avadanliqlari"],
-            "categoryElements":["ss2222","jhj2222","uiui222"]
+          "Smart saatlar": {},
+          "Smart qolbaqlar": {},
+          "Qol saatlari": {},
+          "Saat aksesuarlari": {},
+          "Usaq smart saatlari": {},
+          "Smart avadanliqlari": {
+            "asdasdasdadasd11":'',
+            "asdasdasdadaa22":'',
+            "adasdasdaasdad33":'',
+            "adasdasaddaa44":'',
+            "asdasdasdasd55":'',
+          },
         },
-        {
-            "categoryTitle": ["Komputerler", "Notboklar", "Planşetlər", "Monitorlar", "Kompüterler hisseleri", "Periferik avadanliqlar"],
-            "categoryElements":["ss33333","gg3333",]
-        },
-        {
-            "categoryTitle":  ["Böyük texnika", "Yemək hazırlanması", "İçki hazırlanması"],
-            "categoryElements":["ss4444","jh4444","uiu444"]
-        },
-        {
-            "categoryTitle":   ["Tozsoranlar", "Robot tozsoranlar", "Buxarlı tənzimləyicilər", "Tikiş maşınları", "Buxarlı generatorlar", "Iqlim texnikasi", "Yuyucu tozsoranlar", "Ütülər"],
-            "categoryElements":["ss555","jh555","555"]
-        },
-    ]
- 
+      
+    ];
 
 
     const handleMouseOver = (e) => {
-        setCategoryMenuTitleTwo(categoryNavigationBar[e.target.id].categoryTitle)
-        setCategoryMenuTitleTwoElements(categoryNavigationBar[e.target.id].categoryElements)
+        setCategoryMenuTitleTwo(categoryNavigationBar[e.target.id])
     }
 
     return (
@@ -90,6 +128,7 @@ function Header() {
                                         <center>
                                             <li className="nav-item ">
                                                 <a className="nav-link nav-link-help" href="#">Dəstək<span className="sr-only">(current)</span></a>
+
                                             </li>
                                             <li className="nav-item-two">
                                                 <Link to="/login">
@@ -151,24 +190,28 @@ function Header() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                        <Link to="/products"><a id="0" onMouseOver={handleMouseOver} className="nav-item nav-link">Smartfonlar və aksesuarlar</a></Link>
-                        <Link to="/products"><a id="1" onMouseOver={handleMouseOver} className="nav-item nav-link" >Smart qadjetlər</a></Link>
-                        <Link to="/products"><a id="2" onMouseOver={handleMouseOver} className="nav-item nav-link" >Notbuklar, PK, planşetlər</a></Link>
-                        <Link to="/products"><a id="3" onMouseOver={handleMouseOver} className="nav-item nav-link" >Mətbəx avadanlıqları</a></Link>
-                        <Link to="/products"><a id="4" onMouseOver={handleMouseOver} className="nav-item nav-link" >Ev texnikası</a></Link>
-                        <Link to="/products"><a className="nav-item nav-link" >Ən çox satılanlar</a></Link>
-                        <Link to="/products"><a className="nav-item nav-link" >Ən çox bəyənilənlər</a></Link>
+                            <Link to="/products"><a id="0" onMouseOver={handleMouseOver} className="nav-item nav-link">Smartfonlar və aksesuarlar</a></Link>
+                            <Link to="/products"><a id="1" onMouseOver={handleMouseOver} className="nav-item nav-link" >Smart qadjetlər</a></Link>
+                            <Link to="/products"><a id="2" onMouseOver={handleMouseOver} className="nav-item nav-link" >Notbuklar, PK, planşetlər</a></Link>
+                            <Link to="/products"><a id="3" onMouseOver={handleMouseOver} className="nav-item nav-link" >Mətbəx avadanlıqları</a></Link>
+                            <Link to="/products"><a id="4" onMouseOver={handleMouseOver} className="nav-item nav-link" >Ev texnikası</a></Link>
+                            <Link to="/products"><a className="nav-item nav-link" >Ən çox satılanlar</a></Link>
+                            <Link to="/products"><a className="nav-item nav-link" >Ən çox bəyənilənlər</a></Link>
                         </div>
                     </div>
                     <div id="navbarcategorydiv">
                         <div className="wrapper">
-                            {console.log("data",categoryMenuTitleTwo)}
-                            {categoryMenuTitleTwo.map((item, index) => (
-                                <p key={index}>{item}</p>
-                            ))}
-                            <ul>
-                                { categoryMenuTitleTwoElements.map((item,index)=>(<li key={index}>{item}</li>))}
-                            </ul>
+                            {Object.entries(categoryMenuTitleTwo).map((item) => (
+                                <>
+                                    <span>{item[0]}</span>
+                                    <div>{item[1].length == 0
+                                        ? <p>sssssssssss</p>
+                                        : <span className="threecategory">{Object.keys(item[1])}   </span>
+                                    }</div>
+                                </>
+                             ))}
+
+
                         </div>
                     </div>
                 </div>
