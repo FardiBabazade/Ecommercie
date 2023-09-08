@@ -6,6 +6,8 @@ import Registration from './pages/Registration.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
 import ForgotPasswordConfirmation from './pages/ForgotPasswordConfirmation.jsx';
 import Product from './pages/Product';
+import BasketPage from './pages/BasketPage';
+import FavoritePage from './pages/Favorite';
 function App() {
   return (
     <BrowserRouter>
@@ -16,68 +18,10 @@ function App() {
           <Route path="/passwordrefresh" element={<ForgotPassword />} ></Route>
           <Route path="/passwordconfirm" element={<ForgotPasswordConfirmation />} ></Route>
           <Route path="/products" element={<Product />} ></Route>
+          <Route path="/basket" element={<BasketPage />} ></Route>
+          <Route path="/favorite" element={<FavoritePage />} ></Route>
         </Routes>
     </BrowserRouter>
   );
 }
 export default App;
-
-
-/*  https://preview.colorlib.com/theme/locksmith/services.html */
-
-
-/*
-
-             
-{/*               
-                        <div className={styles.cardProduct}>
-                           <img className="card-img-top" src={imageone} alt="Card image cap" />
-                           <div className="card-body">
-                              <h5 className="card-title text-center">CATEGORY</h5>
-                              <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                              <div className="row">
-                                 <div className="col-md-12">
-                                    <center>
-                                       <span className={styles.cartfooterone}>$980.00</span>
-                                       <span className="textunderline ml-2">$980.00</span>
-                                    </center>
-                                 </div>
-                                 <div className="col-md-3">
-                                    <hr />
-                                 </div>
-                                 <div className="col-md-6">
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                    <i className="fa fa-star"></i>
-                                 </div>
-                                 <div className="col-md-3">
-                                    <hr className={styles.hrtwo} />
-                                 </div>
-                              </div>
-
-                           </div>
-                           <div className="card-footer">
-                              <div className="row">
-                                 <div className="col-md-4">
-                                    <img src={hearticon} alt="" />
-                                 </div>
-                                 <div className="col-md-4">
-                                    <img src={infoicon} alt="" />
-                                 </div>
-                                 <div className="col-md-4">
-                                    <img src={shopcarttwo} alt="" />
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-
-
-
-
-             
-             
-             
-             
-              */

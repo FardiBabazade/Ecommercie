@@ -1,0 +1,23 @@
+.customCounterBtn{
+    width: 32px;
+    height: 40px;
+    background-color: #d10024;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 52px;
+   
+}
+.customCounterBtn:hover{
+    color: #fff;
+}
+.customCounterBtnValue{
+    width: 60px;
+    height: 40px;
+    background-color: #e4e7ed;
+    font-weight: bold;
+    color: #d10024;
+    margin-top: 52px;
+}
+.customCounterBtnValue:hover{
+    color: #d10024;
+}

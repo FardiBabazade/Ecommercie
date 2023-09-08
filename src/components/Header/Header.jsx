@@ -170,30 +170,30 @@ function Header() {
         }
     }
 
- 
- const handleMouseLeave = () => {
-   allProductCategoryHide()
-}
 
- const allProductCategoryHide=()=>{
-    setMouseOverLinkThree({
-        display: 'none',
-    })
-    setMouseOverLink({
-        display: 'none'
-    })
-    setMouseOverLinkTwo({
-        display: 'none',
-    })
-    setMouseOverLinkFour({
-        display: 'none',
-    })
-    setMouseOverLinkFive({
-        display: 'none',
-    })
- }
+    const handleMouseLeave = () => {
+        allProductCategoryHide()
+    }
 
-   
+    const allProductCategoryHide = () => {
+        setMouseOverLinkThree({
+            display: 'none',
+        })
+        setMouseOverLink({
+            display: 'none'
+        })
+        setMouseOverLinkTwo({
+            display: 'none',
+        })
+        setMouseOverLinkFour({
+            display: 'none',
+        })
+        setMouseOverLinkFive({
+            display: 'none',
+        })
+    }
+
+
     return (
         <section>
             <nav className="navbar">
@@ -252,12 +252,14 @@ function Header() {
                                             <a className="nav-link nav-link-fav" href="#">Biz kimik?</a>
                                         </li>
                                         <li className="nav-item-two">
+                                            <Link to="/favorite" >
                                             <a className="nav-link nav-link-fav-bottom" href="#">
                                                 <img className="icon-right favourite" src={heaerticon} />
                                                 <center>
                                                     Seçilmişlər
                                                 </center>
                                             </a>
+                                            </Link>
                                         </li>
                                     </div>
                                     <div className="col-md-2">
@@ -272,12 +274,15 @@ function Header() {
                                                 </div>
                                             </li>
                                             <li className="nav-item-two  navbar-right ">
-                                                <a className="nav-link" href="#">
-                                                    <img className="icon-right-basket" src={shopcart} />
-                                                    <center>
-                                                        Səbət
-                                                    </center>
-                                                </a>
+                                                <Link to="/basket" >
+                                                    <a className="nav-link">
+                                                        <img className="icon-right-basket" src={shopcart} />
+                                                        <center>
+                                                            Səbət
+                                                        </center>
+                                                    </a>
+                                                </Link>
+
                                             </li>
                                         </center>
                                     </div>
@@ -500,7 +505,7 @@ function Header() {
                         </div>
                     </div>
                     <div style={{ display: mouseOverLinkFive.display, height: mouseOverLinkFive.height }} id="navigationbarfive">
-                    <div id="navbarcategorydivone">
+                        <div id="navbarcategorydivone">
                             <div className="wrapper">
                                 <div className="row">
                                     {(categoryMenuTitleTwo).map((item) => (
@@ -523,7 +528,7 @@ function Header() {
 
                                     </div>
                                     <div className="col-md-2">
-                                    <li className="categoryThreeOneLine">İdarəetmə hub</li>
+                                        <li className="categoryThreeOneLine">İdarəetmə hub</li>
                                         <li>Kondisionerlər</li>
                                         <li>Ventilyatorlar</li>
                                         <li>Kombi sistemləri</li>
@@ -546,7 +551,7 @@ function Header() {
                                         <li>İsti döşəmə</li>
                                     </div>
                                     <div className="col-md-2">
-                                      
+
                                     </div>
                                 </div>
                             </div>

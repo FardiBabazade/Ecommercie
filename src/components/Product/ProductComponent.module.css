@@ -16,15 +16,6 @@
     color: #fff;
     font-size: 45px;
 }
-
-
-
-/* .sliderdiv{
-    width: 250px;
-    height: 400px;
-    background-color: red;
-    margin-top: 50px;
-} */
 .alice-carousel__prev-btn span{
     display: none !important;
 }
