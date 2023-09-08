@@ -115,46 +115,77 @@ a{
 #navbarNavAltMarkup .nav-link{
     margin-top: 7px;
 }
+
 #navigationbar{
-   
- 
-}
-#navbarcategorydiv{
     width: 1105px;
-    height: 500px;
+    height: 50px;
     position: relative;
     top:10px;
     z-index: 10;
     background-color: #1e1f29;
     border-radius: 6px;
-    height: 0;
-    visibility: hidden;
     transition: height 1500ms ease;
-   
 }
-#navigationbar:hover  #navbarcategorydiv span{
-  height: 543px;
-  visibility: hidden;
+#navigationbartwo{
+    width: 1105px;
+    height: 50px;
+    position: relative;
+    top:10px;
+    z-index: 10;
+    background-color: #1e1f29;
+    border-radius: 6px;
+    transition: height 1500ms ease;
 }
-/* #navigationbar:hover #navbarcategorydiv li {
-  display: inline-block;
-  } */
-#navbarcategorydiv .threecategory{
+#navigationbarthree{
+    width: 1105px;
+    height: 50px;
+    position: relative;
+    top:10px;
+    z-index: 10;
+    background-color: #1e1f29;
+    border-radius: 6px;
+    display: none;
+    transition: height 1500ms ease;
+}
+#navigationbarfour{
+    width: 1105px;
+    height: 50px;
+    position: relative;
+    top:10px;
+    z-index: 10;
+    background-color: #1e1f29;
+    border-radius: 6px;
+    transition: height 1500ms ease;
+}
+#navigationbarfive{
+    width: 1105px;
+    height: 50px;
+    position: relative;
+    top:10px;
+    z-index: 10;
+    background-color: #1e1f29;
+    border-radius: 6px;
+    transition: height 1500ms ease;
+}
+#navbarcategorydivone span{
     color: #fff;
-    font-size: 16px;
-    /* display: inline-block; */
-    /* visibility: hidden ; */
-}
-#navbarcategorydiv span{
-    color: #d10024;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-left: 15px;
+    font-size: 15px;
+    display: inline-block;
+    width: 200px;
     font-weight: bold;
-    /* display: inline; */
-    /* visibility: hidden; */
 }
-
+#navbarcategorydivone li{
+    color: #fff;
+    width: 150px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
 .wrapper{
     padding: 10px 25px;
 }
+.categoryThreeOneLine{
+    margin-top: 30px;
+}
+

@@ -5,6 +5,7 @@
 }
 .imgdiv{
     position: relative;
+    z-index: 3;
 }
 .productimgtitle{
     position: absolute;
