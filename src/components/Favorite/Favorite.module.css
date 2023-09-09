@@ -1,0 +1,24 @@
+.favoriteSection{
+    width: 100%;
+    background-color: #e4e7ed;
+}
+.cardProduct{
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 10px;
+    height: 378px;
+}
+.cardImgTop{
+    width: 200px;
+    margin-top: 20px;
+}
+.cartfooterone{
+    font-weight: bold;
+}
+.hrtwo{
+    width: 65px;
+    margin-left: -27px;
+}
+.hrone{
+    width: 55px;
+}

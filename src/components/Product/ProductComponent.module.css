@@ -57,8 +57,8 @@ hr{
     width: 59px;
 }
 .hrtwo{
-    margin-left: -58px;
-    width: 65px;
+    margin-left: -35px;
+    width: 60px;
 }
 .selectproduct{
     width: 30%;
@@ -88,4 +88,8 @@ hr{
 .filterInput{
     width: 100px;
     display: inline-block;
+}
+.cardImgTwo{
+    width: 200px;
+    margin-top: 20px;
 }

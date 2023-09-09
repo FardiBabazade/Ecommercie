@@ -98,7 +98,9 @@ function ProductComponent() {
 
 
                      <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
                         <div className="card-body">
                            <h5 className="card-title text-center">CATEGORY</h5>
                            <p className="card-text text-center "><b>PRODUCT NAME</b></p>
@@ -113,10 +115,13 @@ function ProductComponent() {
                                  <hr />
                               </div>
                               <div className="col-md-6">
+                                 <center>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
+                                 </center>
+                               
                               </div>
                               <div className="col-md-3">
                                  <hr className={styles.hrtwo} />
@@ -127,20 +132,28 @@ function ProductComponent() {
                         <div className="card-footer">
                            <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
                               </div>
                            </div>
 
                         </div>
                      </div>
                      <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
                         <div className="card-body">
                            <h5 className="card-title text-center">CATEGORY</h5>
                            <p className="card-text text-center "><b>PRODUCT NAME</b></p>
@@ -155,10 +168,13 @@ function ProductComponent() {
                                  <hr />
                               </div>
                               <div className="col-md-6">
+                                 <center>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
+                                 </center>
+                               
                               </div>
                               <div className="col-md-3">
                                  <hr className={styles.hrtwo} />
@@ -169,20 +185,184 @@ function ProductComponent() {
                         <div className="card-footer">
                            <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div> <div className={styles.cardProduct}>
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
+                        <div className="card-body">
+                           <h5 className="card-title text-center">CATEGORY</h5>
+                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
+                           <div className="row">
+                              <div className="col-md-12">
+                                 <center>
+                                    <span className={styles.cartfooterone}>$980.00</span>
+                                    <span className="textunderline ml-2">$980.00</span>
+                                 </center>
+                              </div>
+                              <div className="col-md-3">
+                                 <hr />
+                              </div>
+                              <div className="col-md-6">
+                                 <center>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 </center>
+                               
+                              </div>
+                              <div className="col-md-3">
+                                 <hr className={styles.hrtwo} />
+                              </div>
+                           </div>
+
+                        </div>
+                        <div className="card-footer">
+                           <div className="row">
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div> <div className={styles.cardProduct}>
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
+                        <div className="card-body">
+                           <h5 className="card-title text-center">CATEGORY</h5>
+                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
+                           <div className="row">
+                              <div className="col-md-12">
+                                 <center>
+                                    <span className={styles.cartfooterone}>$980.00</span>
+                                    <span className="textunderline ml-2">$980.00</span>
+                                 </center>
+                              </div>
+                              <div className="col-md-3">
+                                 <hr />
+                              </div>
+                              <div className="col-md-6">
+                                 <center>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 </center>
+                               
+                              </div>
+                              <div className="col-md-3">
+                                 <hr className={styles.hrtwo} />
+                              </div>
+                           </div>
+
+                        </div>
+                        <div className="card-footer">
+                           <div className="row">
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div> <div className={styles.cardProduct}>
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
+                        <div className="card-body">
+                           <h5 className="card-title text-center">CATEGORY</h5>
+                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
+                           <div className="row">
+                              <div className="col-md-12">
+                                 <center>
+                                    <span className={styles.cartfooterone}>$980.00</span>
+                                    <span className="textunderline ml-2">$980.00</span>
+                                 </center>
+                              </div>
+                              <div className="col-md-3">
+                                 <hr />
+                              </div>
+                              <div className="col-md-6">
+                                 <center>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 <i className="fa fa-star"></i>
+                                 </center>
+                               
+                              </div>
+                              <div className="col-md-3">
+                                 <hr className={styles.hrtwo} />
+                              </div>
+                           </div>
+
+                        </div>
+                        <div className="card-footer">
+                           <div className="row">
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
+                              </div>
+                              <div className="col-md-4">
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
                               </div>
                            </div>
 
                         </div>
                      </div>
                      <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
                         <div className="card-body">
                            <h5 className="card-title text-center">CATEGORY</h5>
                            <p className="card-text text-center "><b>PRODUCT NAME</b></p>
@@ -197,10 +377,13 @@ function ProductComponent() {
                                  <hr />
                               </div>
                               <div className="col-md-6">
+                                 <center>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
+                                 </center>
+                               
                               </div>
                               <div className="col-md-3">
                                  <hr className={styles.hrtwo} />
@@ -211,20 +394,27 @@ function ProductComponent() {
                         <div className="card-footer">
                            <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
+                                 <center>
+                                    <img src={hearticon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
+                                 <center>
+                                    <img src={infoicon} alt="" />
+                                 </center>
                               </div>
                               <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
+                                 <center>
+                                    <img src={shopcarttwo} alt="" />
+                                 </center>
                               </div>
                            </div>
 
                         </div>
-                     </div>
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
+                     </div> <div className={styles.cardProduct}>
+                        <center>
+                           <img className={styles.cardImgTwo} src={imageone} alt="Card image cap" />
+                        </center>
                         <div className="card-body">
                            <h5 className="card-title text-center">CATEGORY</h5>
                            <p className="card-text text-center "><b>PRODUCT NAME</b></p>
@@ -239,10 +429,13 @@ function ProductComponent() {
                                  <hr />
                               </div>
                               <div className="col-md-6">
+                                 <center>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
                                  <i className="fa fa-star"></i>
+                                 </center>
+                               
                               </div>
                               <div className="col-md-3">
                                  <hr className={styles.hrtwo} />
@@ -253,404 +446,31 @@ function ProductComponent() {
                         <div className="card-footer">
                            <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
                                  <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <img src={hearticon} alt="" />
                                  </center>
                               </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
                                  <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <img src={infoicon} alt="" />
                                  </center>
                               </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
                               <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
                                  <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
+                                    <img src={shopcarttwo} alt="" />
                                  </center>
                               </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
                            </div>
 
                         </div>
                      </div>
-
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
+                     
+                   
 
 
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
+                
 
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
-
-
-                     <div className={styles.cardProduct}>
-                        <img className="card-img-top" src={imageone} alt="Card image cap" />
-                        <div className="card-body">
-                           <h5 className="card-title text-center">CATEGORY</h5>
-                           <p className="card-text text-center "><b>PRODUCT NAME</b></p>
-                           <div className="row">
-                              <div className="col-md-12">
-                                 <center>
-                                    <span className={styles.cartfooterone}>$980.00</span>
-                                    <span className="textunderline ml-2">$980.00</span>
-                                 </center>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr />
-                              </div>
-                              <div className="col-md-6">
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                                 <i className="fa fa-star"></i>
-                              </div>
-                              <div className="col-md-3">
-                                 <hr className={styles.hrtwo} />
-                              </div>
-                           </div>
-
-                        </div>
-                        <div className="card-footer">
-                           <div className="row">
-                              <div className="col-md-4">
-                                 <img src={hearticon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={infoicon} alt="" />
-                              </div>
-                              <div className="col-md-4">
-                                 <img src={shopcarttwo} alt="" />
-                              </div>
-                           </div>
-
-                        </div>
-                     </div>
+                  
 
 
                   </div>
