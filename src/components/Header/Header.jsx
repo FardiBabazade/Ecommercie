@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Header.css";
+import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
 import azeflag from "../../assets/icons/azeflag.png";
 import heaerticon from "../../assets/icons/heart.png";
@@ -202,50 +202,50 @@ function Header() {
                         <div className="col-md-3">
                             <a className="navbar-brand-one" href="#">+994 70 777 77 77</a>
                             <Link to="/">
-                                <a className="navbar-brand electro">Ecommerce</a>
+                                <a className="navbar-brand electro">AFcommerce</a>
                             </Link>
                         </div>
                         <div className="col-md-6">
                             <div className="row">
-                                <div className="col-md-3">
-                                    <div class="input-group-prepend">
-                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
+                            <center>
+                              
+                                <div className="col-md-9">
                                     <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
                                 </div>
+                                </center>
+
                                 <div className="col-md-3">
-                                    <button className=" search-button" type="submit">Search</button>
+                                <button className=" search-button" type="submit">Search</button>
+
                                 </div>
+                                {/* <div className="col-md-3"> */}
+                                {/* </div> */}
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div>
                                 <div className="row">
                                     <div className="col-md-3">
-                                        <center>
-                                            <li className="nav-item ">
-                                                <a className="nav-link nav-link-help" href="#">Dəstək<span className="sr-only">(current)</span></a>
+                                        <li className="nav-item ">
+                                            <a className="nav-link nav-link-help" href="#">Dəstək</a>
 
-                                            </li>
-                                            <li className="nav-item-two">
-                                                <Link to="/login">
-                                                    <a className="nav-link">
-                                                        <img className="icon-right" src={accounticon} />
-                                                        <center>
+                                        </li>
+
+                                        <li className="nav-item-two">
+                                            <Link to="/login">
+
+                                                <a className="nav-link">
+                                                    <img className="icon-right" src={accounticon} />
+                                                    <center>
+                                                        <p>
                                                             Hesab
-                                                       </center>
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </center>
+                                                        </p>
+                                                    </center>
+                                                </a>
+
+                                            </Link>
+                                        </li>
+
                                     </div>
                                     <div className="col-md-6">
                                         <li className="nav-item">
@@ -253,12 +253,12 @@ function Header() {
                                         </li>
                                         <li className="nav-item-two">
                                             <Link to="/favorite" >
-                                            <a className="nav-link nav-link-fav-bottom" href="#">
-                                                <img className="icon-right favourite" src={heaerticon} />
-                                                <center>
-                                                    Seçilmişlər
+                                                <a className="nav-link nav-link-fav-bottom" href="#">
+                                                    <img className="icon-right favourite" src={heaerticon} />
+                                                    <center>
+                                                        Seçilmişlər
                                                 </center>
-                                            </a>
+                                                </a>
                                             </Link>
                                         </li>
                                     </div>

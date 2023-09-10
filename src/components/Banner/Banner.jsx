@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./Banner.module.css"
+import styles from "../../styles/Banner.module.css";
 import imageone from "../../assets/images/shop1.webp"
 import imagetwo from "../../assets/images/shop2.webp"
 

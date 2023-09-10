@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PasswordConfirmation.module.css';
+import styles from '../../styles/PasswordConfirmation.module.css';
 import { Link } from "react-router-dom";
 
  function PasswordConfirmation() {

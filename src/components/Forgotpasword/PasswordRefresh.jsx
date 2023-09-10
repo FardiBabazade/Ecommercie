@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './PasswordRefresh.module.css';
+import styles from '../../styles/PasswordRefresh.module.css';
 import { Link } from "react-router-dom";
 
 function PasswordRefresh() {

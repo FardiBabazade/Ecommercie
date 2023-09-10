@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-grid-carousel'
-import "./Topselling.css";
+import "../../styles/Topselling.css";
 
 import hearticon from "../../assets/icons/heart-two.png";
 import infoicon from "../../assets/icons/info.png";

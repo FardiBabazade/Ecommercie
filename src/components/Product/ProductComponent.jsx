@@ -1,6 +1,6 @@
 import React from 'react';
 import Select from 'react-select'
-import styles from "./ProductComponent.module.css";
+import styles from "../../styles/ProductComponent.module.css";
 import backproductimg from "../../assets/images/backproduct.png";
 import hearticon from "../../assets/icons/heart-two.png";
 import infoicon from "../../assets/icons/info.png";
@@ -21,7 +21,7 @@ function ProductComponent() {
    ]
 
    return (
-      <section className="productpage">
+      <section className={styles.productpage}>
 
          <div className={styles.imgdiv}>
             <h3 className={styles.productimgtitle}>Məhsullar</h3>

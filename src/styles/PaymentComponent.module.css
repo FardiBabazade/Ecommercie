@@ -1,0 +1,109 @@
+.styleOrderPageCommon{
+    width: 100%;
+    height: 1000px;
+    background-color:#e4e7ed;
+}
+.OrderFormTitle{
+    margin-top: 17px;
+    font-weight: 600;
+}
+.contactStyleRezervation{
+    width: 700px;
+    border-radius: 9px;
+    height: 850px;
+    background-color: #fff;
+    margin-top: 26px;
+    padding:40px 50px;
+}
+.orderPageStyle{
+    width: 45%;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 3px 12px;
+    color: #d10024;
+    border:2px solid;
+}
+.orderPageStylePayment{
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    background-color: #d10024;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:4px 8px;
+    color: #fff;
+}
+.orderPageStyle h4{
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    cursor: pointer;
+}
+.orderPageStylePayment h4{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.labelNameOrder{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.orderRadioBtn{
+    display: inline-block;
+    accent-color:#d10024;
+    width: 25px;
+    height: 25px;
+    margin-left: 12px;
+}
+.labelNameOrderPayment{
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.paymentCard{
+    width: 100%;
+    margin-top: 33px;
+    padding: 25px 25px;
+    height: 600px;
+    background-color: #e4e7ed;
+    border-radius: 6px;
+}
+.paymentCardTitle{
+    width: 100%;
+    border-radius: 6px;
+    height: 45px;
+    padding: 5px 0;
+    background-color: #d10024;
+}
+.paymentCardInput{
+    margin-top: 10px;
+    display: inline-block;
+}
+.paymentCardInputMonth{
+    margin-top: 7px;
+}
+.paymentCardInputYears{
+    margin-top: 52px;
+}
+.paymentCardInputCvv{
+    margin-top: 52px;
+}
+.rezervationCardConfirmationBtn{
+    width: 100%;
+    margin-top: 27px;
+    background-color: #d10024;
+    color: #fff;
+    border: none;
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.rezervationCardConfirmationBtn:hover{
+    color:#fff;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Newproducts.css'
+import '../../styles/Newproducts.css'
 import Carousel from 'react-grid-carousel';
 
 import hearticon from "../../assets/icons/heart-two.png";

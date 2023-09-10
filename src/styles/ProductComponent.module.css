@@ -7,6 +7,9 @@
     position: relative;
     z-index: 3;
 }
+.productpage{
+    background-color:#e4e7ed;
+}
 .productimgtitle{
     position: absolute;
     z-index: 10;
@@ -29,6 +32,8 @@
 }
 .cardProduct{
     width: 240px;
+    background-color: #fff;
+    border-radius: 6px;
     margin: 40px 10px 10px 10px;
     border: 1px solid lightgray;
 }

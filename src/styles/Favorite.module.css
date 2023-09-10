@@ -6,6 +6,7 @@
     background-color: #fff;
     border-radius: 6px;
     margin: 10px;
+    margin-top: 50px;
     height: 378px;
 }
 .cardImgTop{
@@ -21,4 +22,10 @@
 }
 .hrone{
     width: 55px;
+}
+.favoriteSearchInput{
+    width: 300px;
+    margin-top: 16px;
+    border-radius: 32px;
+    font-weight: 500;
 }
