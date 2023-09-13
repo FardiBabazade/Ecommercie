@@ -10,13 +10,15 @@ import BasketPage from './pages/BasketPage';
 import FavoritePage from './pages/Favorite';
 import OrderPage from './pages/OrderPage.jsx';
 import Payment from './pages/Payment.jsx';
+import UserInfo from './pages/UserInfo';
+import UserInfoInformation from './pages/UserInfoInformation.jsx';
+import UserAddress from './pages/UserAddress';
 function App() {
 
 
   return (
 
     <BrowserRouter>
-
       <Routes>
         <Route path="/" element={<Home />}> </Route>
         <Route path="/login" element={<Login />} ></Route>
@@ -28,6 +30,9 @@ function App() {
         <Route path="/favorite" element={<FavoritePage />} ></Route>
         <Route path="/order" element={<OrderPage />} ></Route>
         <Route path="/payment" element={<Payment />} ></Route>
+        <Route path="/userinfo/home" element={<UserInfo />} ></Route>
+        <Route path="/userinfo/info" element={<UserInfoInformation />}></Route>
+        <Route path="/userinfo/address" element={<UserAddress />}></Route>
       </Routes>
     </BrowserRouter>
   );

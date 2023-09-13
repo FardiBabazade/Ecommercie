@@ -207,15 +207,15 @@ function Header() {
                         </div>
                         <div className="col-md-6">
                             <div className="row">
-                            <center>
-                              
-                                <div className="col-md-9">
-                                    <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
-                                </div>
+                                <center>
+
+                                    <div className="col-md-9">
+                                        <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
+                                    </div>
                                 </center>
 
                                 <div className="col-md-3">
-                                <button className=" search-button" type="submit">Search</button>
+                                    <button className=" search-button" type="submit">Search</button>
 
                                 </div>
                                 {/* <div className="col-md-3"> */}
@@ -226,14 +226,14 @@ function Header() {
                             <div>
                                 <div className="row">
                                     <div className="col-md-3">
+                                        <Link to="/userinfo/home">
                                         <li className="nav-item ">
-                                            <a className="nav-link nav-link-help" href="#">Dəstək</a>
-
+                                            <a className="nav-link nav-link-help">Dəstək</a>
                                         </li>
-
+                                        </Link>
+                                     
                                         <li className="nav-item-two">
                                             <Link to="/login">
-
                                                 <a className="nav-link">
                                                     <img className="icon-right" src={accounticon} />
                                                     <center>
@@ -242,10 +242,8 @@ function Header() {
                                                         </p>
                                                     </center>
                                                 </a>
-
                                             </Link>
                                         </li>
-
                                     </div>
                                     <div className="col-md-6">
                                         <li className="nav-item">
