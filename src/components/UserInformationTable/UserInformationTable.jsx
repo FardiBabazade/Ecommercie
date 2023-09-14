@@ -4,8 +4,6 @@ import Select from 'react-select'
 
 function UserInformationTable() {
 
-
-
     let optionsDays = [];
     obj = {}
 
@@ -35,7 +33,6 @@ function UserInformationTable() {
         optionsYears.push(obj);
     }
 
-
     return (
         <>
             <div className="col-md-12 col-sm-12 col-12">
@@ -60,7 +57,7 @@ function UserInformationTable() {
                                     <input type="email" className="form-control" />
                                 </div>
                                 <div className="col-md-12">
-                                    <label className="font-weight-bold mt-3">Cib telefonu</label>
+                                    <label className="font-weight-bold mt-3">Telefon nömrəsi</label>
                                     <input type="tel" className="form-control" />
                                 </div>
                                 <div className="col-md-4">

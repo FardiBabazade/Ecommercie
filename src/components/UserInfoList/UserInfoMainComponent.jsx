@@ -4,27 +4,58 @@ import { Link } from 'react-router-dom';
 
 function UserInfoMainComponent() {
     return (
-        <div className={styles.InfoUserCard} id="list-tab" role="tablist">
-            <div className={styles.mainCardParentDiv}>
-                <p className={styles.mainCardTitleAccount}>Hesabım</p>
+        <>
+
+            <div className={`${styles.InfoUserCard} ${styles.InfoUserCardThree}`} id="list-tab" role="tablist">
+                <div className={styles.mainCardParentDivThree}>
+                    <p className={styles.mainCardTitleAccount}>gfgffgf@gmail.com</p>
+                </div>
             </div>
-            <Link to="/userinfo/info">
-                <li className={styles.listgroupitem}>
-                    <i className="fa fa-info-circle"></i><a>İstifadəçi məlumatı</a>
+
+
+
+            <div className={`${styles.InfoUserCard} ${styles.InfoUserCardOne}`} id="list-tab" role="tablist">
+                <div className={styles.mainCardParentDiv}>
+                    <p className={styles.mainCardTitleAccount}>Sifarişlərim</p>
+                </div>
+                <Link to="/userinfo/info">
+                    <li className={styles.listgroupitem}>
+                        <a>Bütün sifarişlərim</a>
+                    </li>
+                </Link>
+                <Link to="/userinfo/address">
+                    <li className={styles.listgroupitem}>
+                        <a>Dəyərləndirmələrim</a>
+                    </li>
+                </Link>
+                <li className={`${styles.listgroupitemLast} ${styles.listgroupitem} `}>
+                    <a>Satıcı mesajlarım</a>
                 </li>
-            </Link>
-            <Link to="/userinfo/address">
+            </div>
+
+
+            <div className={`${styles.InfoUserCard} ${styles.InfoUserCardTwo}`} id="list-tab" role="tablist">
+                <div className={styles.mainCardParentDiv}>
+                    <p className={styles.mainCardTitleAccount}>Hesabım & Dəstək</p>
+                </div>
+                <Link to="/userinfo/info">
+                    <li className={styles.listgroupitem}>
+                        <a>İstifadəçi məlumatlarım</a>
+                    </li>
+                </Link>
+                <Link to="/userinfo/address">
+                    <li className={styles.listgroupitem}>
+                        <a>Adres məlumatlarım</a>
+                    </li>
+                </Link>
                 <li className={styles.listgroupitem}>
-                    <i className="fa fa-address-card-o"></i><a>Adres məlumatı</a>
+                    <a>Ödəmə metodlarım</a>
                 </li>
-            </Link>
-            <li className={styles.listgroupitem}>
-                <i className="fa fa-cc-visa"></i><a>Ödəmə metodları</a>
-            </li>
-            <li className={ styles.listgroupitem }>
-                <i className="fa fa-first-order"></i><a>Dəstək</a>
-            </li>
-        </div>
+                <li className={`${styles.listgroupitemLast} ${styles.listgroupitem} `}>
+                    <a>Dəstək</a>
+                </li>
+            </div>
+        </>
     )
 }
 

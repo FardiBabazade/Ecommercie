@@ -1,0 +1,51 @@
+.cardAddressPage{
+   
+    width: 300px;
+    border-radius: 8px;
+    padding: 7px 14px;
+    height: 350px;
+    background-color: #fff;
+    margin-top: 100px;
+}
+.cardAddressPage h6{
+    height: 30px;
+    font-size: 20px;
+    align-self: flex-end;
+}
+.cardAddressPage p{
+   height: 10px !important;
+}
+.cardheader{
+    background-color: #d10024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 46px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.cardAddressPage .cardFooter{
+    margin-top: 65px;
+    display: flex;
+    border-top: 0;
+    background-color: #fff;
+}
+.cardFooterAddressUpdateButton{
+width: 132px;
+height: 33px;
+font-weight: 700;
+background-color: #d10024;
+color: #fff;
+border: none;
+border-radius: 6px;
+font-size: 14px;
+}
+.cardFooter i{
+    color: #d10024;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.cardFooter span{
+    font-weight: 500;
+}
