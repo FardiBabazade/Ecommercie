@@ -1,11 +1,20 @@
 .cardAddressPage{
-   
     width: 300px;
     border-radius: 8px;
     padding: 7px 14px;
     height: 350px;
+    background-color: #e4e7ed;
+    border: 2px double #d10024;
+    margin-top: 15px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.addressRightDiv{
+    width: 826px;
+    height: 462px;
+    margin-top: 42px;
+    border-radius: 8px;
     background-color: #fff;
-    margin-top: 100px;
 }
 .cardAddressPage h6{
     height: 30px;
@@ -29,7 +38,7 @@
     margin-top: 65px;
     display: flex;
     border-top: 0;
-    background-color: #fff;
+    background-color: #e4e7ed;
 }
 .cardFooterAddressUpdateButton{
 width: 132px;
@@ -48,4 +57,58 @@ font-size: 14px;
 }
 .cardFooter span{
     font-weight: 500;
+}
+.titleInformationContent{
+  position: relative;
+    width: 826px;
+    text-align: center;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 100px;
+    /* padding: 8px 22px; */
+}
+.titleInformationContent h3{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 8px;
+}
+.titleInformationContentSpanPlus{
+    font-size: 47px;
+    position: absolute;
+    right: 180px;
+    cursor: pointer;
+    bottom: -6px;
+}
+.titleInformationContentSpanAdd{
+    float: right;
+    font-size: 17px;
+    position: absolute;
+    right: 35px;
+    top: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.AddressAddModal{
+    margin: auto;
+    width: 700px;
+    height: 542px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+.textareAddress{
+    height: 121px;
+    width: 100%;
+    resize: none;
+}
+.saveBtnAddressForm{
+    width: 100%;
+    height: 46px;
+    border: none;
+    background-color: #d10024;
+    color: #fff;
+    margin-top: 35px;
+    border-radius: 6px;
 }

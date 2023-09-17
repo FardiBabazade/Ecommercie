@@ -16,6 +16,7 @@
     "react-grid-carousel": "^1.0.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.7.4",
+    "react-tinder-card": "^1.6.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },

@@ -1,7 +1,7 @@
 .titleInformationContent{
     width: 795px;
     height: 46px;
-    background-color: #d10024;
+    background-color: #fff;
     margin-top: 99px;
     border-radius: 8px;
     display: flex;
@@ -10,7 +10,7 @@
 }
 .titleInformationContent h3{
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 .userInfoLeftDiv{
     width: 100%;
@@ -47,4 +47,40 @@ width: 100%;
 margin-top: 33px;
 font-weight: 700;
 background-color: #d10024;
+}
+.inputSearchOrders{
+    /* width: 200px; */
+    border-radius: 20px;
+}
+.ordersContentDiv{
+    width: 800px;
+    height: 458px;
+    background-color: #fff;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    border-radius: 8px;
+}
+.ordersContentDivTop{
+width: 100%;
+height: 65px;
+background-color: #fff;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom: 2px solid black;
+}
+.ordersContentDivTopPTag{
+    font-size: 13px;
+    font-weight: 500;
+}
+.ordersContentDivBlocks{
+border-radius: 8px;
+width: 95%;
+height: 120px;
+background-color: #e4e7ed;
+margin: 50px 20px;
+padding: 0px 20px;
+}
+.imgOrdersProduct{
+    width: 140px;
+    margin-top: 14px;
 }

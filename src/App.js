@@ -13,6 +13,8 @@ import Payment from './pages/Payment.jsx';
 import UserInfo from './pages/UserInfo';
 import UserInfoInformation from './pages/UserInfoInformation.jsx';
 import UserAddress from './pages/UserAddress';
+import PaymentMethodspage from './pages/PaymentMethodspage';
+import UserOrderPage from './pages/UserOrderPage';
 function App() {
 
 
@@ -33,6 +35,8 @@ function App() {
         <Route path="/userinfo/home" element={<UserInfo />} ></Route>
         <Route path="/userinfo/info" element={<UserInfoInformation />}></Route>
         <Route path="/userinfo/address" element={<UserAddress />}></Route>
+        <Route path="/userinfo/payment" element={<PaymentMethodspage />}></Route>
+        <Route path="/userinfo/orders" element={<UserOrderPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
