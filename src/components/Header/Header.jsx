@@ -208,7 +208,6 @@ function Header() {
                         <div className="col-md-6">
                             <div className="row">
                                 <center>
-
                                     <div className="col-md-9">
                                         <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
                                     </div>
@@ -216,7 +215,6 @@ function Header() {
 
                                 <div className="col-md-3">
                                     <button className=" search-button" type="submit">Search</button>
-
                                 </div>
                                 {/* <div className="col-md-3"> */}
                                 {/* </div> */}
@@ -231,7 +229,6 @@ function Header() {
                                             <a className="nav-link nav-link-help">Dəstək</a>
                                         </li>
                                         </Link>
-                                     
                                         <li className="nav-item-two">
                                             <Link to="/login">
                                                 <a className="nav-link">

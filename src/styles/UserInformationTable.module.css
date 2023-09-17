@@ -11,6 +11,8 @@
 .titleInformationContent h3{
     text-align: center;
     color: #000;
+    font-size: 18px;
+    margin-top: 7px;
 }
 .userInfoLeftDiv{
     width: 100%;
@@ -49,8 +51,9 @@ font-weight: 700;
 background-color: #d10024;
 }
 .inputSearchOrders{
-    /* width: 200px; */
     border-radius: 20px;
+    height: 28px;
+    margin-top: 5px;
 }
 .ordersContentDiv{
     width: 800px;
@@ -83,4 +86,11 @@ padding: 0px 20px;
 .imgOrdersProduct{
     width: 140px;
     margin-top: 14px;
+}
+.ordersContentDivTop h6{
+    margin-bottom: 0;
+    margin-top: 11px;
+}
+.ordersContentDivBlocks i{
+    color: #d10024;
 }

@@ -20,7 +20,7 @@ function UserInfoMainComponent() {
                         <a>Bütün sifarişlərim</a>
                     </li>
                 </Link>
-                <Link to="/userinfo/address">
+                <Link to="/userinfo/rating">
                     <li className={styles.listgroupitem}>
                         <a>Dəyərləndirmələrim</a>
                     </li>

@@ -1,0 +1,49 @@
+.userInfoPage{
+    width: 100%;
+    height: 100%;
+    background-color: #e4e7ed;  
+}
+.bodyRatingContent{
+    width: 100%;
+    height: 183px;
+    background-color: #fff;
+    margin-top: 43px;
+    border-radius: 8px;
+    margin-bottom: 297px;
+    padding: 20px 20px;
+}
+
+.ratingProductStyle{
+width: 100%;
+height: 143px;
+background-color: #e4e7ed;
+border-radius: 8px;
+}
+
+.ratingProductStyle img{
+    width: 120px;
+    margin-top: 30px;
+}
+.ratingProductStyle h5{
+    margin-top: 34px;
+    margin-bottom: 0;
+}
+.ratingProductStyle .spanOneRating{
+    font-size: 13px;
+    font-weight: 500;
+}
+.ratingProductStyle .spanTwoRating{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ratingProductStyle  .spanThreeRating
+{
+    font-size: 13px;
+}
+.spanDateRating{
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: -18px;
+}

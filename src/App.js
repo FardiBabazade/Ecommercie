@@ -15,6 +15,7 @@ import UserInfoInformation from './pages/UserInfoInformation.jsx';
 import UserAddress from './pages/UserAddress';
 import PaymentMethodspage from './pages/PaymentMethodspage';
 import UserOrderPage from './pages/UserOrderPage';
+import Ratingpage from './pages/Ratingpage';
 function App() {
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/userinfo/address" element={<UserAddress />}></Route>
         <Route path="/userinfo/payment" element={<PaymentMethodspage />}></Route>
         <Route path="/userinfo/orders" element={<UserOrderPage />}></Route>
+        <Route path="/userinfo/rating" element={<Ratingpage />}></Route>
       </Routes>
     </BrowserRouter>
   );

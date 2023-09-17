@@ -23,7 +23,6 @@ function UserOrder() {
                         <div className='col-md-5'>
                             <center>
                                 <input className={`${stylesOrders.inputSearchOrders} form-control`} type="text" />
-
                             </center>
                         </div>
                         <div className="col-md-4">
@@ -37,25 +36,25 @@ function UserOrder() {
                     <div className="row">
                         <div className="col-md-3">
                             <center>
-                                <h6 className="font-weight-bold mt-3">Sifariş tarixi</h6>
+                                <h6 className="font-weight-bold">Sifariş tarixi</h6>
                                 <p className={stylesOrders.ordersContentDivTopPTag}>16 sentyabr 15:00 2023 </p>
                             </center>
                         </div>
                         <div className="col-md-3">
                             <center>
-                                <h6 className="font-weight-bold mt-3">Sifariş məzmunu</h6>
+                                <h6 className="font-weight-bold">Sifariş məzmunu</h6>
                                 <p  className={stylesOrders.ordersContentDivTopPTag}>2 təhvil,2 məzmun</p>
                             </center>
                         </div>
                         <div className="col-md-3">
                             <center>
-                                <h6 className="font-weight-bold mt-3">Alıcı</h6>
+                                <h6 className="font-weight-bold">Alıcı</h6>
                                 <p  className={stylesOrders.ordersContentDivTopPTag}>Anar Əhmpdov</p>
                             </center>
                         </div>
                         <div className="col-md-3">
                             <center>
-                                <h6 className="font-weight-bold mt-3">Cəm</h6>
+                                <h6 className="font-weight-bold">Cəm</h6>
                                 <p  className={stylesOrders.ordersContentDivTopPTag}>220 man</p>
                             </center>
                         </div>
@@ -64,7 +63,7 @@ function UserOrder() {
                 <div className={stylesOrders.ordersContentDivBlocks}>
                     <div className="row">
                           <div className="col-md-6">
-                               <h5 className='mt-4'>Təhvil verildi</h5>
+                               <h5 className='mt-4'> <i class="fa fa-check"></i> Təhvil verildi</h5>
                                <h6 className='mt-0'>1 fevral tarixində təhvil verildi</h6>
                           </div>
                           <div className="col-md-6">
@@ -75,7 +74,7 @@ function UserOrder() {
                 <div className={stylesOrders.ordersContentDivBlocks}>
                     <div className="row">
                           <div className="col-md-6">
-                               <h5 className='mt-4'>Təhvil verildi</h5>
+                               <h5 className='mt-4'> <i class="fa fa-check"></i>  Təhvil verildi</h5>
                                <h6 className='mt-0'>1 fevral tarixində təhvil verildi</h6>
                           </div>
                           <div className="col-md-6">
