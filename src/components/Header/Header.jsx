@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
 import azeflag from "../../assets/icons/azeflag.png";
-import heaerticon from "../../assets/icons/heart.png";
-import shopcart from "../../assets/icons/shop-cart.png";
-import accounticon from "../../assets/icons/account.png";
+// import heaerticon from "../../assets/icons/heart.png";
+// import shopcart from "../../assets/icons/shop-cart.png";
+// import accounticon from "../../assets/icons/account.png";
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -169,12 +169,9 @@ function Header() {
             })
         }
     }
-
-
     const handleMouseLeave = () => {
         allProductCategoryHide()
     }
-
     const allProductCategoryHide = () => {
         setMouseOverLinkThree({
             display: 'none',
@@ -192,17 +189,15 @@ function Header() {
             display: 'none',
         })
     }
-
-
     return (
         <section>
-            <nav className="navbar">
+            <section className="headerSection">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-3">
-                            <a className="navbar-brand-one" href="#">+994 70 777 77 77</a>
+                        <div className="col-md-2">
+                            <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
                             <Link to="/">
-                                <a className="navbar-brand electro">AFcommerce</a>
+                                <a className="navbar-brand electro"> <span >AF</span><span className="logo">Store.</span></a>
                             </Link>
                         </div>
                         <div className="col-md-6">
@@ -212,73 +207,61 @@ function Header() {
                                         <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
                                     </div>
                                 </center>
-
                                 <div className="col-md-3">
                                     <button className=" search-button" type="submit">Search</button>
                                 </div>
-                                {/* <div className="col-md-3"> */}
-                                {/* </div> */}
                             </div>
                         </div>
-                        <div className="col-md-3">
-                            <div>
+                        <div className="col-md-4">
+                            <div className="commondiv">
                                 <div className="row">
-                                    <div className="col-md-3">
-                                        <Link to="/userinfo/home">
-                                        <li className="nav-item ">
-                                            <a className="nav-link nav-link-help">Dəstək</a>
-                                        </li>
-                                        </Link>
-                                        <li className="nav-item-two">
+                                    <div className="col-md-4">
+                                        <center>
+                                            <Link to="/userinfo/home">
+                                                <a className="nav-link">
+                                                    <span className="span-help">Dəstək</span>
+                                                </a>
+                                            </Link>
                                             <Link to="/login">
                                                 <a className="nav-link">
-                                                    <img className="icon-right" src={accounticon} />
+                                                    <i className="fa fa-user"></i>
                                                     <center>
-                                                        <p>
-                                                            Hesab
-                                                        </p>
+                                                        <span className="favourite-span-user">Hesab</span>
                                                     </center>
                                                 </a>
                                             </Link>
-                                        </li>
+                                        </center>
                                     </div>
-                                    <div className="col-md-6">
-                                        <li className="nav-item">
-                                            <a className="nav-link nav-link-fav" href="#">Biz kimik?</a>
-                                        </li>
-                                        <li className="nav-item-two">
+                                    <div className="col-md-4">
+                                        <center>
+                                            <a className="nav-link  favourite-span-about"><span>Haqqımızda</span></a>
                                             <Link to="/favorite" >
-                                                <a className="nav-link nav-link-fav-bottom" href="#">
-                                                    <img className="icon-right favourite" src={heaerticon} />
+                                                <a className="nav-link">
+                                                    <i className="fa fa-heart"></i>
                                                     <center>
-                                                        Seçilmişlər
-                                                </center>
+                                                        <span className="favourite-span-fav">Secilmisler</span>
+                                                    </center>
                                                 </a>
                                             </Link>
-                                        </li>
+                                        </center>
                                     </div>
-                                    <div className="col-md-2">
+                                    <div className="col-md-4">
                                         <center>
-                                            <li className="nav-item dropdown lang">
-                                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    AZE  <img className="flag" src={azeflag} />
+                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                               <span> AZE </span> <img className="flag" src={azeflag} />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
+                                                <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> AZE</a>
+                                                <a className="dropdown-item" href="#"><img className="flag" src={engflag} />ENG</a>
+                                            </div>
+                                            <Link to="/basket">
+                                                <a className="nav-link">
+                                                    <i className="fa fa-shopping-basket"></i>
+                                                    <center>
+                                                        <span className="favourite-span-basket">Səbət</span>
+                                                    </center>
                                                 </a>
-                                                <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
-                                                    <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> AZE</a>
-                                                    <a className="dropdown-item" href="#"><img className="flag" src={engflag} />ENG</a>
-                                                </div>
-                                            </li>
-                                            <li className="nav-item-two  navbar-right ">
-                                                <Link to="/basket" >
-                                                    <a className="nav-link">
-                                                        <img className="icon-right-basket" src={shopcart} />
-                                                        <center>
-                                                            Səbət
-                                                        </center>
-                                                    </a>
-                                                </Link>
-
-                                            </li>
+                                            </Link>
                                         </center>
                                     </div>
                                 </div>
@@ -286,7 +269,11 @@ function Header() {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </section>
+
+
+
+
             <nav className="navbar-two navbar-expand-lg" >
                 <div className="container" onMouseLeave={handleMouseLeave}>
 
