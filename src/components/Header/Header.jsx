@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
 import azeflag from "../../assets/icons/azeflag.png";
-// import heaerticon from "../../assets/icons/heart.png";
-// import shopcart from "../../assets/icons/shop-cart.png";
-// import accounticon from "../../assets/icons/account.png";
+
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -41,7 +39,6 @@ function Header() {
         [],
         []
     ]
-
     const handleMouseOver = (e) => {
         setCategoryMenuTitleTwo(categoryNavigationBar[e.target.id]);
         if (e.target.id == 0) {
@@ -270,13 +267,8 @@ function Header() {
                     </div>
                 </div>
             </section>
-
-
-
-
             <nav className="navbar-two navbar-expand-lg" >
                 <div className="container" onMouseLeave={handleMouseLeave}>
-
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

@@ -10,11 +10,7 @@
 #homecompback{
     background-color: #fff;
 }
-.carousel-image{
-    width: 260px !important;
-    height: 240px !important;
-    margin-top: 80px !important;
-}
+
 .imageslider
 {  
     position: absolute;
@@ -28,7 +24,14 @@
 }
  .next,.prev{
     color: #d10024 !important;
+    top:42% !important;
+    font-size: 36px !important;
 }
 .next,.prev:hover{
-    background-color: #e4e7ed !important;
+    background-color: transparent !important;
+}
+
+.carousel-image {
+    width: 100% !important;
+    height: 300px !important;
 }

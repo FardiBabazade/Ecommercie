@@ -3,25 +3,29 @@ import "../../styles/Slider.css"
 import { Carousel } from 'react-carousel-minimal';
 
 
-import imageone from "../../assets/images/shop1.webp"
-import imagetwo from "../../assets/images/shop2.webp"
-import imagethree from "../../assets/images/shop3.webp"
+import imageone from "../../assets/images/homesliderone.jpg"
+import imagetwo from "../../assets/images/homeslidertwo.png"
+import imagethree from "../../assets/images/homesliderthree.png"
+import imagefour from "../../assets/images/homesliderfour.png"
 
 
 function Sliderhome() {
   const data = [
     {
       image: imageone,
-      style: 'width:200px !important',
-      caption: "Komputerler"
+      // caption: "Komputerler"
     },
     {
       image: imagetwo,
-      caption: "Smartfonlar"
+      // caption: "Smartfonlar"
     },
     {
       image: imagethree,
-      caption: "Notbuklar"
+      // caption: "Notbuklar"
+    },
+    {
+      image: imagefour,
+      // caption: "Notbuklar"
     }
   ];
 
@@ -44,7 +48,7 @@ function Sliderhome() {
               data={data}
               time={2000}
               width="1500px"
-              height="500px"
+              height="300px"
               captionStyle={captionStyle}
               radius="10px"
               slideNumber={false}
@@ -54,7 +58,7 @@ function Sliderhome() {
               dots={false}
               pauseIconColor="white"
               pauseIconSize="40px"
-              slideBackgroundColor="#e4e7ed"
+              slideBackgroundColor="#fff"
               slideImageFit="cover"
               thumbnails={true}
               thumbnailWidth="100px"

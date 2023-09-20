@@ -1,6 +1,6 @@
 .headerSection{
     background-color: #1e1f29;
-    height: 170px;
+    height: 130px;
     border-bottom: 3px solid #d31737;
 }
 a{
@@ -38,6 +38,7 @@ a{
 .nav-link span:hover{
     color: #d10024 !important;
     cursor: pointer;
+    
 }
 .flag{
     width: 20px;
@@ -261,9 +262,8 @@ margin-left: -3px;
 }
 #navbarNavAltMarkup .nav-link{
     font-weight: 400;
-    /* width: 250px; */
 }
 #navbarNavAltMarkup .nav-link:hover{
     text-decoration: underline !important;
-
+    color: #d10024 !important;
 }

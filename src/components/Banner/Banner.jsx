@@ -1,15 +1,13 @@
 import React from 'react'
 import styles from "../../styles/Banner.module.css";
-import imageone from "../../assets/images/shop1.webp"
-import imagetwo from "../../assets/images/shop2.webp"
 
 function Banner() {
     return (
-        <section className={styles.bannerdiv}>
+        <section  className={styles.bannerdiv}>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-4">
-                        <img className={styles.imgclass} src={imageone} />
+
                     </div>
                     <div className="col-md-4">
                         <center>
@@ -49,7 +47,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <img className={styles.imgclass} src={imagetwo} />
+                        
                     </div>
                 </div>
             </div>
