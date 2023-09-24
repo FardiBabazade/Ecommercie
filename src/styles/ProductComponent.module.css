@@ -31,14 +31,32 @@
     margin-bottom: 50px;
 }
 .cardProduct{
-    width: 240px;
+    width: 199px;
     background-color: #fff;
     border-radius: 6px;
     margin: 40px 10px 10px 10px;
     border: 1px solid lightgray;
 }
-.card-footer  :hover{
+.cardProduct h5,p{
+    font-size: 17px;
+}
+.card-footer:hover{
     cursor: pointer;
+}
+.plusminusIcon{
+width: 27px;
+height: 27px;
+border-radius: 50%;
+background-color: #d10024;
+padding: 2px;
+}
+.plusminusIcon i{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.productPageCardFooterIcons{
+    width: 18px;
 }
 .card h5{
     font-size: 13px;
@@ -52,6 +70,8 @@
 .cartfooterone{
     font-weight: bold;
     color: #d31737;
+    font-size: 12px;
+    display: inline-block;
 }
 .fa-star{
     font-size: 13px;
@@ -66,35 +86,84 @@ hr{
     width: 60px;
 }
 .selectproduct{
-    width: 30%;
+    width: 178px;
     margin-top: 50px;
+    margin-left: 11px;
 }
 .showResultProduct{
     margin-top: 50px;
-    text-align: center;
+    text-align: end;
 }
 .categoryFilterTitle{
     font-weight: 500;
-    text-align: left;
-    margin-top: 40px;
+}
+.categoryFilterTitleOne{
+    cursor: pointer;
+}
+.categoryFilterTitleTwo{
+    cursor: pointer;
+}
+.categoryFilterTitleThree{
+    cursor: pointer;
 }
 .categoryFilterTitleChildren{
     text-align: left;
 }
 .categoryFilter{
-    
+    position: -webkit-sticky;
     position: sticky;
-    top:25px;
-    margin-left: 200px;
+    width: 230px;
+    background-color: #fff;
+    margin-top: 129px;
+    top:2px; 
+    border-radius: 6px;
+}
+.cardheader span{
+    font-size: 16px;
 }
 .labelcategory{
-    margin-right: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
 }
 .filterInput{
     width: 100px;
     display: inline-block;
 }
 .cardImgTwo{
-    width: 200px;
-    margin-top: 20px;
+    width: 130px;
+    margin-top: 10px;
 }
+  .myaccordion {
+    max-width: 500px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  }
+ 
+  .myaccordion .cardheader .btnlink {
+    font-weight: bold;
+    border-bottom-color: #EDEFF0 !important;
+    height: 55px;
+  }
+  .myaccordion .btnlink
+  {
+    color: #000 !important;
+    padding-top: 2px;
+  } 
+
+  
+
+  .checkBoxProduct{
+    display: block;
+    width: 21px;
+    height: 21px;
+    accent-color: #d10024;
+  }
+  .inputCollapse input:first-child{
+    margin-top: 0px ;
+  }
+  .inputCollapse  input:not(:first-child)
+  {
+    margin-top: 12px;
+  }
+ 

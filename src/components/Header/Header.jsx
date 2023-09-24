@@ -39,6 +39,8 @@ function Header() {
         [],
         []
     ]
+
+
     const handleMouseOver = (e) => {
         setCategoryMenuTitleTwo(categoryNavigationBar[e.target.id]);
         if (e.target.id == 0) {
@@ -191,11 +193,13 @@ function Header() {
             <section className="headerSection">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-2">
+                        <div className="col-md-3">
+                            <center>
                             <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
                             <Link to="/">
                                 <a className="navbar-brand electro"> <span >AF</span><span className="logo">Store.</span></a>
                             </Link>
+                            </center>
                         </div>
                         <div className="col-md-6">
                             <div className="row">
@@ -209,7 +213,7 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-3">
                             <div className="commondiv">
                                 <div className="row">
                                     <div className="col-md-4">
@@ -236,7 +240,7 @@ function Header() {
                                                 <a className="nav-link">
                                                     <i className="fa fa-heart"></i>
                                                     <center>
-                                                        <span className="favourite-span-fav">Secilmisler</span>
+                                                        <span className="favourite-span-fav">Seçilmişlər</span>
                                                     </center>
                                                 </a>
                                             </Link>
@@ -245,11 +249,11 @@ function Header() {
                                     <div className="col-md-4">
                                         <center>
                                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               <span> AZE </span> <img className="flag" src={azeflag} />
+                                               <span> AZ </span> <img className="flag" src={azeflag} />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
-                                                <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> AZE</a>
-                                                <a className="dropdown-item" href="#"><img className="flag" src={engflag} />ENG</a>
+                                                <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Az</a>
+                                                <a className="dropdown-item" href="#"><img className="flag" src={engflag} />En</a>
                                             </div>
                                             <Link to="/basket">
                                                 <a className="nav-link">

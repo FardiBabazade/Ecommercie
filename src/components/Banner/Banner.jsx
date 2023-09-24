@@ -2,6 +2,11 @@ import React from 'react'
 import styles from "../../styles/Banner.module.css";
 
 function Banner() {
+
+
+    let timerDate=new Date();
+
+    console.log(timerDate);
     return (
         <section  className={styles.bannerdiv}>
             <div className="container-fluid">

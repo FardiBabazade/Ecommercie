@@ -46,7 +46,7 @@ function Sliderhome() {
           <center>
             <Carousel
               data={data}
-              time={2000}
+              time={1500}
               width="1500px"
               height="300px"
               captionStyle={captionStyle}

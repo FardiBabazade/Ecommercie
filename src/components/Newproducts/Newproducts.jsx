@@ -1,14 +1,16 @@
 import React from 'react'
 import '../../styles/Newproducts.css'
 import Carousel from 'react-grid-carousel';
+// import Carousel from 'react-multi-carousel';
+// import 'react-multi-carousel/lib/styles.css';
 
 import hearticon from "../../assets/icons/heart-two.png";
 import infoicon from "../../assets/icons/info.png";
 import shopcarttwo from "../../assets/icons/shop-cart-two.png";
 
 import imageone from "../../assets/images/shop1.webp"
-import imagetwo from "../../assets/images/shop2.webp"
-import imagethree from "../../assets/images/shop3.webp"
+// import imagetwo from "../../assets/images/shop2.webp"
+// import imagethree from "../../assets/images/shop3.webp"
 
 
 
@@ -20,11 +22,11 @@ function Newproducts() {
         <div className='content container'>
 
             <h3 className="text-left mb-5">YENI MƏHSULLAR</h3>
-            <Carousel cols={4} rows={1} gap={10} loop>
+            <Carousel cols={4} rows={1} gap={10} autoplay={2000} loop>
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -41,10 +43,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -56,32 +61,30 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
+                                        <img src={hearticon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
+                                        <img src={infoicon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
-                
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -98,10 +101,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -113,31 +119,30 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
+                                        <img src={hearticon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
+                                        <img src={infoicon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -154,10 +159,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -169,31 +177,30 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
+                                        <img src={hearticon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
+                                        <img src={infoicon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -210,10 +217,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -225,31 +235,30 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
+                                        <img src={hearticon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
+                                        <img src={infoicon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -266,10 +275,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -281,31 +293,30 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
+                                        <img src={hearticon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
+                                        <img src={infoicon} alt="" />
 
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className="card">
                         <center>
-                        <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
+                            <img className="cardImgNewProducts" src={imageone} alt="Card image cap" />
 
                         </center>
                         <div className="card-body">
@@ -322,10 +333,13 @@ function Newproducts() {
                                     <hr />
                                 </div>
                                 <div className="col-md-6">
+                                    <center>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
+                                    </center>
+                                  
                                 </div>
                                 <div className="col-md-3">
                                     <hr className="hrtwo" />
@@ -337,28 +351,25 @@ function Newproducts() {
                             <div className="row">
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={hearticon} alt="" />
-
+                                        <img src={hearticon} alt="" />
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={infoicon} alt="" />
-
+                                        <img src={infoicon} alt="" />
                                     </center>
                                 </div>
                                 <div className="col-md-4">
                                     <center>
-                                    <img src={shopcarttwo} alt="" />
+                                        <img src={shopcarttwo} alt="" />
 
                                     </center>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </Carousel.Item>
-                
+            
             </Carousel>
         </div>
     )
