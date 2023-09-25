@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
 import azeflag from "../../assets/icons/azeflag.png";
 
 import { Link } from 'react-router-dom';
+import i18n from '../../i18n';
 
 function Header() {
+
+    const { t, i18n } = useTranslation();
+
+
+    const changeLanguageFunction = async (lang) => {
+        await i18n.changeLanguage(lang)
+    }
 
 
     const [categoryMenuTitleTwo, setCategoryMenuTitleTwo] = useState([])
@@ -31,11 +40,11 @@ function Header() {
         height: '0'
     })
     let categoryNavigationBar = [
-        ["Smartfonlar", "Duymeli telefonlar", "Stasionar telefonlar", "Telefon aksesuarlari", "Qulaqliq aksesuarlari", "Qulaqliqlar"],
-        ["Smart saatlar", "Smart qolbaqlar", "Qol saatlari", "Saat aksesuarlari", "Usaq smart saatlari", "Smart avadanliqlari"],
-        ["Komputerler", "Notboklar", "Planşetlər", "Monitorlar", "Kompüterler hisseleri", "Periferik avadanliqlar"],
-        ["Böyük texnika", "Yemək hazırlanması", "İçki hazırlanması"],
-        ["Tozsoranlar", "Robot tozsoranlar", "Buxarlı tənzimləyicilər", "Tikiş maşınları", "Iqlim texnikasi", , "Ütülər"],
+        [`${t('smartphones')}`, `${t('push-button phones')}`, `${t('landline phones')}`, `${t('phone accessories')}`, `${t('headphone accessories')}`, `${t('headphones')}`],
+        [`${t('smart watches')}`, `${t('smart bracelets')}`, `${t('wrist watches')}`, `${t('watch accessories')}`, `${t('childrens smart watches')}`, `${t('smart equipment')}`],
+        [`${t('computers')}`, `${t('notebooks')}`, `${t('tablets')}`, `${t('monitors')}`, `${t('computer parts')}`, `${t('peripheral equipments')}`],
+        [`${t('great technique')}`, `${t('food preparation')}`, `${t(`preparation of drink`)}`],
+        [`${t('vacuum cleaners')}`, `${t('robot vacuum cleaners')}`, `${t(`steam regulators`)}`, `${t('sewing machines')}`, `${t('climate technology')}`, `${t(`irons`)}`],
         [],
         []
     ]
@@ -188,6 +197,9 @@ function Header() {
             display: 'none',
         })
     }
+
+
+
     return (
         <section>
             <section className="headerSection">
@@ -195,10 +207,10 @@ function Header() {
                     <div className="row">
                         <div className="col-md-3">
                             <center>
-                            <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
-                            <Link to="/">
-                                <a className="navbar-brand electro"> <span >AF</span><span className="logo">Store.</span></a>
-                            </Link>
+                                <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
+                                <Link to="/">
+                                    <a className="navbar-brand electro"> <span >AF</span><span className="logo">Store.</span></a>
+                                </Link>
                             </center>
                         </div>
                         <div className="col-md-6">
@@ -220,14 +232,14 @@ function Header() {
                                         <center>
                                             <Link to="/userinfo/home">
                                                 <a className="nav-link">
-                                                    <span className="span-help">Dəstək</span>
+                                                    <span className="span-help">{t('help')}</span>
                                                 </a>
                                             </Link>
                                             <Link to="/login">
                                                 <a className="nav-link">
                                                     <i className="fa fa-user"></i>
                                                     <center>
-                                                        <span className="favourite-span-user">Hesab</span>
+                                                        <span className="favourite-span-user">{t('account')}</span>
                                                     </center>
                                                 </a>
                                             </Link>
@@ -235,12 +247,12 @@ function Header() {
                                     </div>
                                     <div className="col-md-4">
                                         <center>
-                                            <a className="nav-link  favourite-span-about"><span>Haqqımızda</span></a>
+                                            <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
                                             <Link to="/favorite" >
                                                 <a className="nav-link">
                                                     <i className="fa fa-heart"></i>
                                                     <center>
-                                                        <span className="favourite-span-fav">Seçilmişlər</span>
+                                                        <span className="favourite-span-fav">{t('favorite')}</span>
                                                     </center>
                                                 </a>
                                             </Link>
@@ -249,17 +261,17 @@ function Header() {
                                     <div className="col-md-4">
                                         <center>
                                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               <span> AZ </span> <img className="flag" src={azeflag} />
+                                                <span> {i18n.language} </span> <img className="flag" src={azeflag} />
                                             </a>
                                             <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
-                                                <a className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Az</a>
-                                                <a className="dropdown-item" href="#"><img className="flag" src={engflag} />En</a>
+                                                <a onClick={() => changeLanguageFunction('Az')} className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Az</a>
+                                                <a onClick={() => changeLanguageFunction('En')} className="dropdown-item" href="#"><img className="flag" src={engflag} />En</a>
                                             </div>
                                             <Link to="/basket">
                                                 <a className="nav-link">
                                                     <i className="fa fa-shopping-basket"></i>
                                                     <center>
-                                                        <span className="favourite-span-basket">Səbət</span>
+                                                        <span className="favourite-span-basket">{t('basket')}</span>
                                                     </center>
                                                 </a>
                                             </Link>
@@ -278,14 +290,14 @@ function Header() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <Link to="/products"><a id="0" onMouseOver={handleMouseOver} className="nav-item nav-link"> Smartfonlar və aksesuarlar</a>
+                            <Link to="/products"><a id="0" onMouseOver={handleMouseOver} className="nav-item nav-link"> {t('smartphones and accessories')}</a>
                             </Link>
-                            <Link to="/products"><a id="1" onMouseOver={handleMouseOver} className="nav-item nav-link" >Smart qadjetlər</a></Link>
-                            <Link to="/products"><a id="2" onMouseOver={handleMouseOver} className="nav-item nav-link" >Notbuklar, PK, planşetlər</a></Link>
-                            <Link to="/products"><a id="3" onMouseOver={handleMouseOver} className="nav-item nav-link" >Mətbəx avadanlıqları</a></Link>
-                            <Link to="/products"><a id="4" onMouseOver={handleMouseOver} className="nav-item nav-link" >Ev texnikası</a></Link>
-                            <Link to="/products"><a id="5" onMouseOver={handleMouseOver} className="nav-item nav-link" >Ən çox satılanlar</a></Link>
-                            <Link to="/products"><a id="6" onMouseOver={handleMouseOver} className="nav-item nav-link" >Ən çox bəyənilənlər</a></Link>
+                            <Link to="/products"><a id="1" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('smart gadgets')}</a></Link>
+                            <Link to="/products"><a id="2" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('notebooks, PCs, tablets')}</a></Link>
+                            <Link to="/products"><a id="3" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('kitchen equipment')}</a></Link>
+                            <Link to="/products"><a id="4" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('household appliances')}</a></Link>
+                            <Link to="/products"><a id="5" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('best sellers')}</a></Link>
+                            <Link to="/products"><a id="6" onMouseOver={handleMouseOver} className="nav-item nav-link" >{t('most liked')}</a></Link>
                         </div>
                     </div>
                     <div style={{ display: mouseOverLink.display, height: mouseOverLink.height }} id="navigationbar">
@@ -309,23 +321,21 @@ function Header() {
 
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">Qoruyucu şüşə</li>
-                                        <li>Simsiz enerji toplama cihazı</li>
-                                        <li>Qoruyucu örtük</li>
-                                        <li>USB naqillər</li>
-                                        <li>Qoruyucu örtük</li>
-                                        <li>Poverbanklar</li>
-                                        <li>Adapterlər</li>
-                                        <li>Tutacaqlar</li>
-                                        <li>SD kartlar</li>
-                                        <li>Selfie çubuqları</li>
-                                        <li>Gamepadlar</li>
-                                        <li>Magsafelər</li>
+                                        <li className="categoryThreeOneLine">{t('protective glass')}</li>
+                                        <li>{t('wireless energy harvesting device')}</li>
+                                        <li>{t('protective cover')} </li>
+                                        <li>{t('uSB cables')}</li>
+                                        <li>{t('power banks')}</li>
+                                        <li>{t('adapters')}</li>
+                                        <li>{t('sD cards')}</li>
+                                        <li>{t('selfie sticks')}</li>
+                                        <li>{t('gamepads')}</li>
+                                        <li>{t('magsafes')}</li>
                                     </div>
                                     <div className="col-md-4">
-                                        <li className="categoryThreeOneLine">Bluetooth simsiz qulaqlıqlar</li>
-                                        <li>TWS simsiz qulaqlıqlar</li>
-                                        <li>Simli qulaqlıqlar</li>
+                                        <li className="categoryThreeOneLine">{t('bluetooth wireless headphones')}</li>
+                                        <li>{t('tWS wireless headphones')}</li>
+                                        <li>{t('wired headphones')}</li>
                                     </div>
                                 </div>
                             </div>
@@ -358,15 +368,15 @@ function Header() {
 
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">İdarəetmə hub</li>
-                                        <li>Sensorlar</li>
-                                        <li>İşıqlandırma</li>
-                                        <li>İP videomüşahidə kameraları</li>
-                                        <li>Smart kilidlər</li>
-                                        <li>Smart yuvalar</li>
-                                        <li>Smart dəstlər</li>
-                                        <li>Domofonlar</li>
-                                        <li>Söndürənlər</li>
+                                        <li className="categoryThreeOneLine">{t('management hub')}</li>
+                                        <li>{t('sensors')}</li>
+                                        <li>{t('lighting')}</li>
+                                        <li>{t('iP video surveillance cameras')}</li>
+                                        <li>{t('smart locks')}</li>
+                                        <li>{t('smart slots')}</li>
+                                        <li>{t('smart kits')}</li>
+                                        <li>{t('intercoms')}</li>
+                                        <li>{t('extinguishers')}</li>
                                     </div>
                                 </div>
                             </div>
@@ -384,9 +394,9 @@ function Header() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine"> Sistem blokları</li>
-                                        <li>Monitorlar</li>
-                                        <li>Monobloklar</li>
+                                        <li className="categoryThreeOneLine"> {t('system blocks')}</li>
+                                        <li>{t('monitors')}</li>
+                                        <li>{t('monoblocks')}</li>
                                     </div>
                                     <div className="col-md-2">
 
@@ -398,14 +408,14 @@ function Header() {
 
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">İdarəetmə hub</li>
-                                        <li>Videokart</li>
-                                        <li>Ana plata</li>
-                                        <li>Operativ yaddaş</li>
-                                        <li>Soyutma sistemləri</li>
-                                        <li>Qida blokları</li>
-                                        <li>Prosessorlar</li>
-                                        <li>Sistem bloku üçün keyslər</li>
+                                        <li className="categoryThreeOneLine">{t('management hub')}</li>
+                                        <li>{t('video card')}</li>
+                                        <li>{t('motherboard')} </li>
+                                        <li>{t('operating memory')}</li>
+                                        <li>{t('cooling systems')}</li>
+                                        <li>{t('power supply')}</li>
+                                        <li>{t('processors')}</li>
+                                        <li>{t('cases for the system unit')}</li>
                                     </div>
                                     <div className="col-md-2">
 
@@ -413,7 +423,6 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div style={{ display: mouseOverLinkFour.display, height: mouseOverLinkFour.height }} id="navigationbarfour">
                         <div id="navbarcategorydivone">

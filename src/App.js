@@ -1,5 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx"
 import Registration from './pages/Registration.jsx';
@@ -16,11 +18,13 @@ import UserAddress from './pages/UserAddress';
 import PaymentMethodspage from './pages/PaymentMethodspage';
 import UserOrderPage from './pages/UserOrderPage';
 import Ratingpage from './pages/Ratingpage';
+
 function App() {
 
+       
+  //  const {t,i18n}=useTranslation();
 
   return (
-
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}> </Route>

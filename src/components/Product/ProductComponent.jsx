@@ -37,7 +37,7 @@ function ProductComponent() {
                                        data-toggle="collapse" data-target="#collapseOne"
                                        aria-expanded="false" aria-controls="collapseOne">
                                        <span>Əlaqəli məhsullar</span>
-                                       <div  className={styles.plusminusIcon}>
+                                       <div className={styles.plusminusIcon}>
                                           <i className={`fa fa-plus`}></i>
                                        </div>
                                     </div>
@@ -99,7 +99,7 @@ function ProductComponent() {
                                        aria-expanded="false"
                                        aria-controls="collapseOne">
                                        <span> Əlaqəli məhsullar</span>
-                                       <div  className={styles.plusminusIcon}>
+                                       <div className={styles.plusminusIcon}>
                                           <i className={`fa fa-plus`}></i>
                                        </div>
                                     </div>
@@ -124,12 +124,7 @@ function ProductComponent() {
                                  </div>
                               </div>
                            </div>
-
                         </div>
-
-
-
-
 
 
                         {/* <h5 className={styles.categoryFilterTitle}>Qiymət</h5>
@@ -497,15 +492,6 @@ function ProductComponent() {
                            </div>
                         </div>
                      </div>
-
-
-
-
-
-
-
-
-
                   </div>
                </div>
             </div>
