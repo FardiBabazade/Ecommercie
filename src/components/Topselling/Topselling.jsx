@@ -2,6 +2,9 @@ import React from 'react'
 import Carousel from 'react-grid-carousel'
 import "../../styles/Topselling.css";
 
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
+
 import hearticon from "../../assets/icons/heart-two.png";
 import infoicon from "../../assets/icons/info.png";
 import shopcarttwo from "../../assets/icons/shop-cart-two.png";
@@ -12,10 +15,14 @@ import imageone from "../../assets/images/shop1.webp"
 
 
 function Topselling() {
+
+    
+    const { t, i18n } = useTranslation();
+
     return (
         <div className='content container topsellingsection'>
 
-            <h3 className="text-left mt-5 mb-5">ƏN ÇOX SATILANLAR</h3>
+            <h3 className="text-left mt-5 mb-5">{t('BEST SELLERS')}</h3>
             <Carousel cols={4} rows={1} gap={10} autoplay={2000} loop>
                 <Carousel.Item>
                     <div className="card">

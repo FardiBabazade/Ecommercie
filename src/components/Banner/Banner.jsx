@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from "../../styles/Banner.module.css";
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 
 function Banner() {
 
 
-    let timerDate=new Date();
-
-    console.log(timerDate);
+    const { t, i18n } = useTranslation();
     return (
+        
         <section  className={styles.bannerdiv}>
             <div className="container-fluid">
                 <div className="row">
@@ -45,8 +46,8 @@ function Banner() {
                         <div className="row">
                             <div className="col-md-12">
                                 <center>
-                                    <h3 className={styles.bannertitle}>HƏFTƏNİNƏN İSTİ TƏKLİFLƏRİ</h3>
-                                    <button className={styles.bannerbtn}>SATIŞA BAŞLA</button>
+                                    <h3 className={styles.bannertitle}>{t('HOT OFFERS OF THE WEEK')}</h3>
+                                    <button className={styles.bannerbtn}>{t('START SELLING')}</button>
                                 </center>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
@@ -436,56 +436,55 @@ function Header() {
                                 </div>
                                 <div className="row">
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine"> Plitələr</li>
-                                        <li>Sobalar</li>
-                                        <li>Aspiratorlar</li>
-                                        <li>qabyuyan maşınlar</li>
-                                        <li>soyuducular</li>
-                                        <li>dondurucular</li>
-                                        <li>paltaryuyan maşınlar</li>
-                                        <li>mikrodalğalı sobalar</li>
-                                        <li>isirtmə siyirtmələri</li>
-                                        <li>Qida tullantıları üçün üyüdücülər</li>
-                                        <li>Dispenselər</li>
-                                        <li>Siqar üçün piltələr</li>
-                                        <li>Buz hazırlayan</li>
+                                        <li className="categoryThreeOneLine">{t('plates')}</li>
+                                        <li>{t('stoves')}</li>
+                                        <li>{t('aspirators')}</li>
+                                        <li>{t('dishwashers')} </li>
+                                        <li>{t('refrigerators')}</li>
+                                        <li>{t('freezers')}</li>
+                                        <li>{t('washing machines')}</li>
+                                        <li>{t('microwave ovens')}</li>
+                                        <li>{t('drawer pulls')}</li>
+                                        <li>{t('grinders for food waste')}</li>
+                                        <li>{t('dispensations')}</li>
+                                        <li>{t('cigarette lighters')}</li>
+                                        <li>{t('ice maker')}</li>
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">İdarəetmə hub</li>
-                                        <li>Blenderlər</li>
-                                        <li>Ətçəkən maşınlar</li>
-                                        <li>Çörək bişirən  maşınlar</li>
-                                        <li>Mikserlər</li>
-                                        <li>İzqara</li>
-                                        <li>Multibişiricilər</li>
-                                        <li>Buxarlı bişiricilər</li>
-                                        <li>Tosterlər</li>
-                                        <li>Dilimləyicilər</li>
-                                        <li>Mətbəx tərəziləri</li>
-                                        <li>Sendviç hazırlayan</li>
-                                        <li>Blinçik hazırlayan</li>
-                                        <li>Dondurma hazırlayan</li>
-                                        <li>Doğrayıcı</li>
-                                        <li>Aeorogril</li>
-                                        <li>Mətbəx kombaynları</li>
-                                        <li>İnduksiyalı plitələr</li>
-                                        <li>Mini sobalar</li>
+                                        <li className="categoryThreeOneLine">{t('management hub')}</li>
+                                        <li>{t('blenders')}</li>
+                                        <li>{t('meat grinders')}</li>
+                                        <li>{t('baking machines')}</li>
+                                        <li>{t('mixers')}</li>
+                                        <li>{t('izgara')}</li>
+                                        <li>{t('multicookers')}</li>
+                                        <li>{t('steam cookers')}</li>
+                                        <li>{t('toasters')}</li>
+                                        <li>{t('kitchen scales')}</li>
+                                        <li>{t('slicers')}</li>
+                                        <li>{t('sandwich maker')}</li>
+                                        <li>{t('a pancake maker')}</li>
+                                        <li>{t('chopper')}</li>
+                                        <li>{t('aerogril')}</li>
+                                        <li>{t('kitchen mixers')}</li>
+                                        <li>{t('induction plates')}</li>
+                                        <li>{t('mini ovens')}</li>
+                                        <li></li>
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">Elektrikli çaydanlar</li>
-                                        <li>İnduksiyon çaydanlar</li>
-                                        <li>Sitrus press </li>
-                                        <li>Şirəçəkənlər</li>
-                                        <li>Qəhvə bişirənlər</li>
-                                        <li>Termopotlar</li>
-                                        <li>Damcılı qəhvədanlar</li>
-                                        <li>Turka</li>
-                                        <li>Qəhvə üyüdücülər</li>
-                                        <li>Kapuçinatorlar</li>
-                                        <li>Süd köpükləndiricilər</li>
-                                        <li>Qəhvə kapsulu</li>
-                                        <li>Qəhvə</li>
-                                        <li>Qəhvə üçün siroplar</li>
+                                        <li className="categoryThreeOneLine">{t('electric kettles')}</li>
+                                        <li>{t('induction kettles')}</li>
+                                        <li>{t('citrus press')}</li>
+                                        <li>{t('juicers')}</li>
+                                        <li>{t('coffee makers')}</li>
+                                        <li>{t('thermopots')}</li>
+                                        <li>{t('drip coffee makers')}</li>
+                                        <li>{t('coffee grinders')}</li>
+                                        <li>{t('cappuccinators')}</li>
+                                        <li>{t('milk frothers')}</li>
+                                        <li>{t('coffee capsule')}</li>
+                                        <li>{t('coffee')}</li>
+                                        <li>{t('syrups for coffee')}</li>
                                     </div>
                                 </div>
                             </div>
@@ -515,27 +514,25 @@ function Header() {
 
                                     </div>
                                     <div className="col-md-2">
-                                        <li className="categoryThreeOneLine">İdarəetmə hub</li>
-                                        <li>Kondisionerlər</li>
-                                        <li>Ventilyatorlar</li>
-                                        <li>Kombi sistemləri</li>
-                                        <li>Havanəmləndiricilər</li>
-                                        <li>Su qızdırıcıları</li>
-                                        <li>Kaminlər</li>
-                                        <li>Qidrometrlər</li>
-                                        <li>Termometrlər</li>
-                                        <li>Kaminlər</li>
-                                        <li>Konvektorlar</li>
-                                        <li>İnfraqırmızı qızdırıcılar</li>
-                                        <li>İqlim kompleksləri</li>
-                                        <li>Qızdırıcı ventilyatorlar</li>
-                                        <li>Yağ qızdırıcılar</li>
-                                        <li>Seksiyalı radiatorlar</li>
-                                        <li>Panel radiatorlar</li>
-                                        <li>Kombi üçün tənzimləyicilər</li>
-                                        <li>Qaz reduktorları</li>
-                                        <li>Seksiya kranları</li>
-                                        <li>İsti döşəmə</li>
+                                        <li className="categoryThreeOneLine">{t('management hub')}</li>
+                                        <li>{t('air conditioners')}</li>
+                                        <li>{t('ventilators')}</li>
+                                        <li>{t('combi systems')}</li>
+                                        <li>{t('humidifiers')}</li>
+                                        <li>{t('water heaters')}</li>
+                                        <li>{t('fireplaces')}</li>
+                                        <li>{t('hydrometers')}</li>
+                                        <li>{t('thermometers')}</li>
+                                        <li>{t('convectors')}</li>
+                                        <li>{t('infrared heaters')}</li>
+                                        <li>{t('climate complexes')}</li>
+                                        <li>{t('heater fans')}</li>
+                                        <li>{t('white heaters')}</li>
+                                        <li>{t('sectional radiators')}</li>
+                                        <li>{t('panel radiators')}</li>
+                                        <li>{t('regulators for Combi')}</li>
+                                        <li>{t('gas reducers')}</li>
+                                        <li>{t('warm floor')}</li>
                                     </div>
                                     <div className="col-md-2">
 

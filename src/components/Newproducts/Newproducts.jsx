@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../styles/Newproducts.css'
 import Carousel from 'react-grid-carousel';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n';
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
 
@@ -17,11 +19,12 @@ import imageone from "../../assets/images/shop1.webp"
 
 
 function Newproducts() {
+    const { t, i18n } = useTranslation();
 
     return (
         <div className='content container'>
 
-            <h3 className="text-left mb-5">YENI MƏHSULLAR</h3>
+            <h3 className="text-left mb-5">{t('New products')}</h3>
             <Carousel cols={4} rows={1} gap={10} autoplay={2000} loop>
                 <Carousel.Item>
                     <div className="card">
