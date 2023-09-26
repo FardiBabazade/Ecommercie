@@ -247,7 +247,9 @@ function Header() {
                                     </div>
                                     <div className="col-md-4">
                                         <center>
+                                            <Link to="/about">
                                             <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
+                                            </Link>
                                             <Link to="/favorite" >
                                                 <a className="nav-link">
                                                     <i className="fa fa-heart"></i>

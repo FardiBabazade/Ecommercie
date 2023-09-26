@@ -18,11 +18,11 @@ import UserAddress from './pages/UserAddress';
 import PaymentMethodspage from './pages/PaymentMethodspage';
 import UserOrderPage from './pages/UserOrderPage';
 import Ratingpage from './pages/Ratingpage';
+import About from './pages/About';
 
 function App() {
 
        
-  //  const {t,i18n}=useTranslation();
 
   return (
     <BrowserRouter>
@@ -43,6 +43,7 @@ function App() {
         <Route path="/userinfo/payment" element={<PaymentMethodspage />}></Route>
         <Route path="/userinfo/orders" element={<UserOrderPage />}></Route>
         <Route path="/userinfo/rating" element={<Ratingpage />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
     </BrowserRouter>
   );
