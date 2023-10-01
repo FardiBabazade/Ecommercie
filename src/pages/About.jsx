@@ -3,6 +3,7 @@ import styles from "../styles/About.module.css"
 import Layout from '../main/Layout';
 
 function About() {
+    // console.log("Env file",process.env.PUBLIC_URL)
     return (
         <Layout>
             <div className='container'>
