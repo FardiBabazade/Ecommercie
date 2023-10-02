@@ -63,6 +63,30 @@ a{
 .nav-link:hover .fa-user{
     color: #d10024;
 }
+.hoverDivUserData{
+    width: 160px;
+    padding: 13px 13px;
+    height: 133px;
+    border-radius: 5px;
+    background-color: #d10024;
+    border: 1px solid #d10024;
+    position: relative;
+    z-index: 20;
+   display: none;
+    transform: translate(0%, -10%);
+    transition:  opacity 0.5s ease; /* Animasyonlu geçiş ekleyin */
+}
+.hoverDivUserData li{
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+    font-size: 11px;
+    cursor: pointer;
+}
+.nav-link-account:hover  .hoverDivUserData {
+    display: block;
+}
 .nav-link:hover .favourite-span-user{
     color: #d10024;
 }
@@ -174,6 +198,12 @@ margin-left: -3px;
     color: #7c858a  !important;
     font-size: 15px;
 }
+/* .hoverDivUserData{
+    width: 130px;
+    height: 133px;
+    border-radius: 5px;
+    background-color: #d10024;
+} */
 /* NAVBAR3 */
 #navbarNavAltMarkup .nav-link{
     margin-top: 7px;

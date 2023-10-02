@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import "../../styles/Header.css";
 import engflag from "../../assets/icons/engflag.png";
@@ -6,6 +6,8 @@ import azeflag from "../../assets/icons/azeflag.png";
 
 import { Link } from 'react-router-dom';
 import i18n from '../../i18n';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function Header() {
 
@@ -14,6 +16,10 @@ function Header() {
 
     const changeLanguageFunction = async (lang) => {
         await i18n.changeLanguage(lang)
+    }
+
+    const logoutSite = () => {
+        toast("Hesabdan çıxış edildi")
     }
 
 
@@ -202,8 +208,10 @@ function Header() {
 
     return (
         <section>
+
             <section className="headerSection">
                 <div className="container">
+                    <ToastContainer />
                     <div className="row">
                         <div className="col-md-3">
                             <center>
@@ -230,25 +238,46 @@ function Header() {
                                 <div className="row">
                                     <div className="col-md-4">
                                         <center>
-                                            <Link to="/userinfo/home">
-                                                <a className="nav-link">
-                                                    <span className="span-help">{t('help')}</span>
-                                                </a>
+                                            <Link to="/">
+                                            <a className="nav-link">
+                                                <span className="span-help">{t('help')}</span>
+                                            </a>
                                             </Link>
-                                            <Link to="/login">
-                                                <a className="nav-link">
-                                                    <i className="fa fa-user"></i>
-                                                    <center>
-                                                        <span className="favourite-span-user">{t('account')}</span>
-                                                    </center>
-                                                </a>
-                                            </Link>
+
+                                            <div className='nav-link-account'>
+                                                <Link to="/login">
+                                                    <a className="nav-link ">
+                                                        <i className="fa fa-user"></i>
+                                                        <center>
+                                                            <span className="favourite-span-user">{t('account')}</span>
+                                                        </center>
+
+                                                    </a>
+                                                </Link>
+
+                                                <div className="hoverDivUserData">
+                                                    <ul>
+                                                        <Link to="/userinfo/orders">
+                                                            <li>Bütün sifarişlərim</li>
+                                                        </Link>
+                                                        <Link to="/userinfo/rating">
+                                                            <li>Dəyərləndirmələrim</li>
+                                                        </Link>
+                                                        <Link to="/userinfo/info">
+                                                            <li>İstifadəçi məlumatlarım</li>
+                                                        </Link>
+                                                        <li onClick={logoutSite}>Çıxış</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
                                         </center>
                                     </div>
                                     <div className="col-md-4">
                                         <center>
                                             <Link to="/about">
-                                            <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
+                                                <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
                                             </Link>
                                             <Link to="/favorite" >
                                                 <a className="nav-link">
