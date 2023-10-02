@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Provider } from 'react-redux'; // Redux Toolkit'den Provider'ı içe aktarın
+import store from './redux/store.js'; // Redux Toolkit ile oluşturulan store'u içe aktarın
 
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx"
@@ -25,6 +26,7 @@ function App() {
        
 
   return (
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}> </Route>
@@ -46,6 +48,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
       </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 export default App;

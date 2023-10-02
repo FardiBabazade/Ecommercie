@@ -5,6 +5,7 @@
 }
 .errorShowSignup{
     color: #d10024;
+    font-size: 11px;
 }
 .logindiv{
 
@@ -69,14 +70,6 @@ color: #d10024;
     width: 300px;
     margin-top: 10px;
 }
-/* .textforgot{
-    color: #d10024 !important;
-    display: block;
-    font-size: 15px;
-    text-align: justify;
-    margin-left: 31px;
-    margin-top: 3px;
-} */
 
 .loginbutton{
  width: 300px;

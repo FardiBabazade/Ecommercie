@@ -3,6 +3,10 @@
     height: 540px;
     background-color:#e4e7ed ;
 }
+.errorShowSignup{
+    color: #d10024;
+    font-size:11px;
+}
 .logindiv{
 
     width: 360px;
