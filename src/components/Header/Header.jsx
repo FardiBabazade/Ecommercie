@@ -213,7 +213,7 @@ function Header() {
                 <div className="container">
                     <ToastContainer />
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-lg-3  col-md-3 col-sm-3 col-3"> {/*  1ci-div */}
                             <center>
                                 <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
                                 <Link to="/">
@@ -221,22 +221,23 @@ function Header() {
                                 </Link>
                             </center>
                         </div>
-                        <div className="col-md-6">
-                            <div className="row">
+                        <div className="col-lg-6 col-md-6 col-sm-5 col-5">{/*  2ci-div */}
+                            <div className="row ">
                                 <center>
-                                    <div className="col-md-9">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-9 input-search-left-div">
                                         <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
                                     </div>
-                                </center>
-                                <div className="col-md-3">
+                                    </center>
+                               
+                                <div className="col-lg-3 col-md-3 col-sm-2 col-3 input-search-right-div  ">
                                     <button className=" search-button" type="submit">Search</button>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-4"> {/*  3 cu-div */}
                             <div className="commondiv">
                                 <div className="row">
-                                    <div className="col-md-4">
+                                    <div className="col-lg-4 col-md-4  col-sm-4 col-4">
                                         <center>
                                             <Link to="/">
                                             <a className="nav-link">
@@ -274,7 +275,7 @@ function Header() {
 
                                         </center>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className=" col-lg-4  col-md-4 col-sm-4 col-4">
                                         <center>
                                             <Link to="/about">
                                                 <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
@@ -289,7 +290,7 @@ function Header() {
                                             </Link>
                                         </center>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-lg-4  col-md-4 col-sm-4 col-4">
                                         <center>
                                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span> {i18n.language} </span> <img className="flag" src={azeflag} />
