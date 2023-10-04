@@ -212,7 +212,7 @@ function Header() {
             <section className="headerSection">
                 <div className="container">
                     <ToastContainer />
-                    <div className="row">
+                    <div className="row laptop-header-view">
                         <div className="col-lg-3  col-md-3 col-sm-3 col-3"> {/*  1ci-div */}
                             <center>
                                 <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
@@ -224,13 +224,16 @@ function Header() {
                         <div className="col-lg-6 col-md-6 col-sm-5 col-5">{/*  2ci-div */}
                             <div className="row ">
                                 <center>
-                                    <div className="col-lg-9 col-md-9 col-sm-10 col-9 input-search-left-div">
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-12 input-search-left-div">
                                         <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
+                                        <div className="search-container">
+                                            <input className="form-control" type="text" placeholder="Ara..." />
+                                            <i className="fa fa-search"></i>
+                                        </div>
                                     </div>
-                                    </center>
-                               
+                                </center>
                                 <div className="col-lg-3 col-md-3 col-sm-2 col-3 input-search-right-div  ">
-                                    <button className=" search-button" type="submit">Search</button>
+                                    <button className="search-button" type="submit">Search</button>
                                 </div>
                             </div>
                         </div>
@@ -240,9 +243,9 @@ function Header() {
                                     <div className="col-lg-4 col-md-4  col-sm-4 col-4">
                                         <center>
                                             <Link to="/">
-                                            <a className="nav-link">
-                                                <span className="span-help">{t('help')}</span>
-                                            </a>
+                                                <a className="nav-link">
+                                                    <span className="span-help">{t('help')}</span>
+                                                </a>
                                             </Link>
 
                                             <div className='nav-link-account'>
@@ -313,6 +316,191 @@ function Header() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="row mobile-header-view">
+                        <div className="mobile-header-one">
+                            <div className="flex-header-one">
+                                <div>
+                                    <Link to="/">
+                                        <a className="navbar-brand electro"> <span >AF</span><span className="logo">Store.</span></a>
+                                    </Link>
+                                </div>
+                                <div>
+                                    <a href="tel:"><span className="spanTelNumber"> +994 70 777 77 77</span> </a>
+                                </div>
+                                <div>
+                                    <Link to="/">
+                                        <a className="nav-link">
+                                            <span className="span-help">{t('help')}</span>
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div>
+                                    <Link to="/about">
+                                        <a className="nav-link  favourite-span-about">
+                                            <span className='span-about'>{t('about')}</span>
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div>
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span className="language-selected-text"> {i18n.language} </span> <img className="flag" src={azeflag} />
+                                    </a>
+                                    <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
+                                        <a onClick={() => changeLanguageFunction('AZ')} className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> AZ</a>
+                                        <a onClick={() => changeLanguageFunction('EN')} className="dropdown-item" href="#"><img className="flag" src={engflag} />EN</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="flex-header-two">
+                                <div>
+                                    <Link to="/login">
+                                        <a className="nav-link">
+                                            <i className="fa fa-user"></i>
+                                            <center>
+                                                <span className="favourite-span-user">{t('account')}</span>
+                                            </center>
+                                        </a>
+                                    </Link>
+                                </div>
+                                <div>
+                                    <center>
+                                        <Link to="/favorite" >
+                                            <a className="nav-link">
+                                                <i className="fa fa-heart"></i>
+                                                <center>
+                                                    <span className="favourite-span-fav">{t('favorite')}</span>
+                                                </center>
+                                            </a>
+                                        </Link>
+                                    </center>
+                                </div>
+                                <div>
+                                    <center>
+                                        <Link to="/basket">
+                                            <a className="nav-link">
+                                                <i className="fa fa-shopping-basket"></i>
+                                                <center>
+                                                    <span className="favourite-span-basket">{t('basket')}</span>
+                                                </center>
+                                            </a>
+                                        </Link>
+                                    </center>
+                                </div>
+                            </div>
+                            <div className="flex-header-three">
+                                <div className="search-container">
+                                    <input className="form-control" type="text" placeholder="Ara..." />
+                                    <i className="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-lg-3  col-md-3 col-sm-3 col-3"> }
+                          
+                        </div> */}
+                        {/* <div className="col-lg-6 col-md-6 col-sm-5 col-5">
+                            <div className="row ">
+                                <center>
+                                    <div className="col-lg-9 col-md-9 col-sm-10 col-12 input-search-left-div">
+                                        <input className="form-control input-search" type="search" placeholder="Search" aria-label="Search" />
+                                        <div className="search-container">
+                                            <input className="form-control" type="text" placeholder="Ara..." />
+                                            <i className="fa fa-search"></i>
+                                        </div>
+                                    </div>
+                                </center>
+                                <div className="col-lg-3 col-md-3 col-sm-2 col-3 input-search-right-div  ">
+                                    <button className="search-button" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-3 col-4"> 
+                            <div className="commondiv">
+                                <div className="row">
+                                    <div className="col-lg-4 col-md-4  col-sm-4 col-4">
+                                        <center>
+                                            <Link to="/">
+                                                <a className="nav-link">
+                                                    <span className="span-help">{t('help')}</span>
+                                                </a>
+                                            </Link>
+
+                                            <div className='nav-link-account'>
+                                                <Link to="/login">
+                                                    <a className="nav-link ">
+                                                        <i className="fa fa-user"></i>
+                                                        <center>
+                                                            <span className="favourite-span-user">{t('account')}</span>
+                                                        </center>
+
+                                                    </a>
+                                                </Link>
+
+                                                <div className="hoverDivUserData">
+                                                    <ul>
+                                                        <Link to="/userinfo/orders">
+                                                            <li>Bütün sifarişlərim</li>
+                                                        </Link>
+                                                        <Link to="/userinfo/rating">
+                                                            <li>Dəyərləndirmələrim</li>
+                                                        </Link>
+                                                        <Link to="/userinfo/info">
+                                                            <li>İstifadəçi məlumatlarım</li>
+                                                        </Link>
+                                                        <li onClick={logoutSite}>Çıxış</li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </center>
+                                    </div>
+                                    <div className=" col-lg-4  col-md-4 col-sm-4 col-4">
+                                        <center>
+                                            <Link to="/about">
+                                                <a className="nav-link  favourite-span-about"><span>{t('about')}</span></a>
+                                            </Link>
+                                            <Link to="/favorite" >
+                                                <a className="nav-link">
+                                                    <i className="fa fa-heart"></i>
+                                                    <center>
+                                                        <span className="favourite-span-fav">{t('favorite')}</span>
+                                                    </center>
+                                                </a>
+                                            </Link>
+                                        </center>
+                                    </div>
+                                    <div className="col-lg-4  col-md-4 col-sm-4 col-4">
+                                        <center>
+                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span> {i18n.language} </span> <img className="flag" src={azeflag} />
+                                            </a>
+                                            <div className="dropdown-menu dropdown-menu-lang" aria-labelledby="navbarDropdown">
+                                                <a onClick={() => changeLanguageFunction('Az')} className="dropdown-item" href="#"> <img className="flag" src={azeflag} /> Az</a>
+                                                <a onClick={() => changeLanguageFunction('En')} className="dropdown-item" href="#"><img className="flag" src={engflag} />En</a>
+                                            </div>
+                                            <Link to="/basket">
+                                                <a className="nav-link">
+                                                    <i className="fa fa-shopping-basket"></i>
+                                                    <center>
+                                                        <span className="favourite-span-basket">{t('basket')}</span>
+                                                    </center>
+                                                </a>
+                                            </Link>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+                    </div>
+
+
+
+
+
+
+
                 </div>
             </section>
             <nav className="navbar-two navbar-expand-lg" >

@@ -1,5 +1,5 @@
 .headerSection{
-    background-color: #1e1f29;
+    background-color: #15161d;
     height: 130px;
     border-bottom: 3px solid #d31737;
 }
@@ -298,7 +298,15 @@ margin-left: -3px;
     color: #d10024 !important;
 }
 
-
+.search-container input{
+    display: none;
+}
+.search-container .fa-search{
+    display: none;
+}
+.mobile-header-view{
+    display: none !important;
+}
 
 /*   RESPONSİVE HEADER.CSS     */ 
 
@@ -529,19 +537,19 @@ margin-left: -3px;
 .input-search {
     font-size: 12px;
     font-weight: 700;
-    width: 155px !important;
+    width: 141px !important;
     margin-top: 48px;
 }
 .nav-link {
     margin-top: 3px;
 }
 .input-search {
-    width: 135px !important;
+    width: 141px !important;
 }
 .search-button {
     margin-top: 48px;
     height: 27px;
-    margin-left: -12px;
+    margin-left: -31px;
 }
 .electro {
     font-size: 26px;
@@ -569,12 +577,72 @@ margin-left: -3px;
     margin-left: -7px;
 }
 }
-@media screen and (max-width: 528px) {
+
+@media screen and (max-width: 560px) {
+
     .input-search {
-        width: 131px !important;
+        width: 148px !important;
+    }
+}
+@media screen and (max-width: 545px) {
+
+    .input-search {
+        width: 144px !important;
+    }
+}
+@media screen and (max-width: 541px) {
+
+    .input-search {
+        width: 137px !important;
+    }
+}
+
+/*   PHONE AND SMALL  */
+@media screen and (max-width: 528px) {
+
+    .input-search {
+        /* width: 200px !important;
+        height: 26px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px; */
+        display: none;
+    }
+    .favourite-span-fav {
+        margin-top: 0px;
+    }
+    .nav-link .fa-heart {
+        margin-top: 2px;
+    }
+    .nav-link .fa-shopping-basket {
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 3px;
+    }
+    .search-container {
+        position: relative;
+    }
+    .search-container input{
+        
+        display: block;
+        border-radius: 16px;
+        margin-top: 49px;
+        height: 25px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .search-container .fa-search{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        font-size: 14px;
+        color: #d10024;
     }
     .search-button {
         margin-top: 48px;
+        height: 26px;
+        display: none;
     }
     .electro {
         font-size: 23px;
@@ -584,7 +652,6 @@ margin-left: -3px;
     .span-help {
         margin-left: -13px;
     }
-
     .favourite-span-about {
         margin-left: -33px !important;
     }
@@ -598,5 +665,104 @@ margin-left: -3px;
     .fa-shopping-basket {
         margin-left: -28px;
     }
+    .commondiv {
+        margin-left: 0px;
+        width: 135px;
+    }
+
 }
 
+@media screen and (max-width: 500px) {
+    .laptop-header-view{
+        display: none !important;
+    }
+    .mobile-header-view{
+        display: block !important;
+    }
+    .headerSection {
+        height: 165px;
+    }
+    .flex-header-one{
+        height: 54px;
+        background-color: #1e1f29;
+    }
+    .flex-header-two{
+        height: 54px;
+        background-color:#15161d;
+    }
+    .flex-header-three{
+        height: 54px;
+        background-color:#15161d;
+        padding: 0 70px;
+    }
+    .span-help {
+        margin-left: 0px;
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 9px;
+    }
+    .span-about{
+        font-size: 12px;
+        display: inline-block;
+        margin-top: 9px;
+    }
+    .favourite-span-about {
+        margin-left: 0 !important;
+        
+    }
+    .favourite-span-user{
+        font-size: 12px;
+        margin-left: -10px;
+    }
+    #navbarDropdown {
+        margin-left: 0px;
+        margin-top: 10px;
+    }    
+    .nav-link {
+        margin-top: 0px;
+    }
+
+    .flex-header-one{
+        display: flex;
+        justify-content:space-around;
+    }
+    .flex-header-two{
+        display: flex;
+        justify-content:center;
+    }
+  .language-selected-text{
+    font-size: 12px;
+  }
+  .flag{
+    margin-top: -5px;
+    width: 22px;
+  }
+  .favourite-span-fav{
+    margin-left: 0 !important;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+  .favourite-span-basket{
+    margin-left: 0;
+    font-size: 12px;
+   
+  }
+  .search-container input{
+    margin-top: 8px;
+    font-size: 13px;
+  }
+ .nav-link .fa-shopping-basket {
+    margin-left: 0;
+    margin-top: 9px;
+    margin-bottom: 3px;
+ }
+ .fa-heart {
+    margin-left: 0px;
+    margin-top: 9px !important;
+}
+.nav-link .fa-user{
+    margin-top: 9px;
+}
+
+}
